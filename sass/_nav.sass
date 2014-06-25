@@ -1,0 +1,70 @@
+.nav
+	position: absolute
+	top: 0
+	bottom: 0 
+	height: 1px  
+	left: 50%
+	margin-left: -480px  
+	width: 1px 
+	height: 100% 
+	z-index: 100 
+	+reg
+	.nav__ul
+		position: absolute
+		top: 50%
+		margin-top: -130px 
+		list-style: none
+	a
+		text-decoration: none
+		&:hover
+			i
+				opacity: 1 
+			span
+				left: 34px 
+				opacity: 1 
+	li
+		margin-bottom: 22px 
+		position: relative
+		&.is-active
+			i
+				background: #000
+				opacity: 1  
+			span
+				color: #363636 
+	i
+		display: block
+		width: 12px 
+		height: 12px 
+		border: 3px solid #000 
+		opacity: .22 
+		border-radius: 20px
+		+transition(all .1s linear)
+	span
+		font-size: 14px 
+		position: absolute
+		height: 18px 
+		line-height: 18px
+		left: 34px - 10px
+		top: 0   
+		color: #fff 
+		opacity: 0
+		+transition(all .1s linear)
+	&.is-home
+		a
+			span
+				left: 34px 
+				opacity: 1 
+	&.nav_contrast
+		i
+			border-color: #FFF 
+		span
+			color: #000 
+		li
+			&.is-active
+				i
+					background: #fff
+					opacity: 1  
+				span
+					color: #eee 
+	
+		 
