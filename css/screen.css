@@ -44,7 +44,7 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .section { background: url(../img/bg1.jpg) no-repeat 0 0; -moz-background-size: cover 100%; -webkit-background-size: cover 100%; background-size: cover 100%; overflow: hidden; position: relative; }
 
 .gobottom { position: absolute; bottom: 50px; left: 50%; width: 300px; text-align: center; margin-left: -150px; cursor: pointer; }
-.gobottom .gobottom__icon { background: url('../img/icons-s372eadf69d.png') 0 -78px no-repeat; width: 28px; height: 66px; display: inline-block; }
+.gobottom .gobottom__icon { background: url('../img/icons-s8cbedaedb6.png') 0 -201px no-repeat; width: 28px; height: 66px; display: inline-block; }
 .gobottom span { display: block; margin-top: 19px; text-align: center; font-size: 14px; }
 
 .home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; }
@@ -52,13 +52,13 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; }
 .home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; z-index: 220; }
 .home .home__shadow { position: absolute; top: 50%; left: 50%; width: 1000px; height: 760px; margin-top: -380px; margin-left: -500px; background: url("../img/homeshadow.png"); z-index: 8; }
-.home .home__logo { position: absolute; top: 100px; left: 49px; background: url('../img/icons-s372eadf69d.png') 0 0 no-repeat; width: 245px; height: 68px; font: 0/0 a; text-shadow: none; color: transparent; z-index: 1000; cursor: pointer; }
-.home .home__top { position: absolute; top: 72px; right: 0; background: url('../img/icons-s372eadf69d.png') 0 -389px no-repeat; width: 328px; height: 129px; z-index: 120; }
+.home .home__logo { position: absolute; top: 100px; left: 49px; background: url('../img/icons-s8cbedaedb6.png') 0 -123px no-repeat; width: 245px; height: 68px; font: 0/0 a; text-shadow: none; color: transparent; z-index: 1000; cursor: pointer; }
+.home .home__top { position: absolute; top: 72px; right: 0; background: url('../img/icons-s8cbedaedb6.png') 0 -512px no-repeat; width: 328px; height: 129px; z-index: 120; }
 .home .home__top .home__toptext { font-size: 25px; color: #565555; text-align: right; white-space: nowrap; padding-right: 52px; padding-top: 33px; line-height: 32px; }
 .home .home__top .home__topsubtext { font-size: 16px; color: #a3c32f; position: absolute; bottom: -0.5em; right: 22px; width: 180px; text-align: center; }
 
 .descr { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; }
-.descr .descr__top { margin-top: 100px; background: url('../img/icons-s372eadf69d.png') 0 -154px no-repeat; width: 317px; height: 195px; position: relative; white-space: nowrap; color: #e8e7e7; font-size: 24px; text-align: right; line-height: 1; }
+.descr .descr__top { margin-top: 100px; background: url('../img/icons-s8cbedaedb6.png') 0 -277px no-repeat; width: 317px; height: 195px; position: relative; white-space: nowrap; color: #e8e7e7; font-size: 24px; text-align: right; line-height: 1; }
 .descr .descr__top h2 { font-size: 48px; font-weight: normal; margin-bottom: 20px; }
 .descr .descr__top .descr__topwrap { position: absolute; top: 55px; right: 42px; }
 .descr .descr__top { margin-top: 100px; float: right; position: relative; z-index: 11; }
@@ -72,8 +72,12 @@ body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
 .descr .descr__about h3 a:before { position: absolute; bottom: -4px; content: " "; left: 0; width: 100%; border-bottom: 3px solid #b4d42e; }
 .descr .descr__about ul { list-style: none; color: #d1cdcd; font-size: 16px; }
 .descr .descr__about ul li { margin-bottom: 18px; position: relative; padding-left: 32px; }
-.descr .descr__about ul li:before { content: " "; background: url('../img/icons-s372eadf69d.png') 0 -359px no-repeat; width: 20px; height: 20px; position: absolute; left: 0; top: -1px; }
+.descr .descr__about ul li:before { content: " "; background: url('../img/icons-s8cbedaedb6.png') 0 -482px no-repeat; width: 20px; height: 20px; position: absolute; left: 0; top: -1px; }
 .descr .descr__about ul em { color: #b4d42e; font-style: normal; }
 .descr .descr__about ul strong { font-weight: normal; color: white; }
-.descr .video { position: absolute; left: 92px; top: 160px; z-index: 10; width: 427px; height: 427px; background: black; border-radius: 427px; }
-.descr .video .video__pic { width: 427px; height: 427px; background: black; border-radius: 427px; }
+.descr .video { position: absolute; left: 92px; top: 160px; z-index: 10; width: 427px; height: 427px; background: black; border-radius: 427px; cursor: pointer; }
+.descr .video:hover .video__overlay { opacity: 0; }
+.descr .video .video__pic { width: 427px; height: 427px; background: black url(../img/video.jpg) no-repeat 50% 50%; border-radius: 427px; position: relative; }
+.descr .video .video__overlay { position: absolute; left: 0; top: 0; width: 427px; height: 427px; background: black; border-radius: 427px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; opacity: 0.5; }
+.descr .video .video__play { background: url('../img/icons-s8cbedaedb6.png') 0 0 no-repeat; width: 113px; height: 113px; position: absolute; left: 155px; top: 155px; z-index: 20; }
+.descr .video .video__play span { font-size: 14px; color: #b4d42e; width: 100px; left: 50%; top: 130px; margin-left: -50px; position: absolute; text-align: center; }

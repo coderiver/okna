@@ -195,9 +195,39 @@
 		height: 427px 
 		background: #000
 		border-radius: 427px
+		cursor: pointer
+		&:hover
+			.video__overlay
+				opacity: 0 
 		.video__pic
+			width: 427px 
+			height: 427px 
+			background: #000 url(../img/video.jpg) no-repeat 50% 50%
+			border-radius: 427px
+			position: relative
+		.video__overlay
+			position: absolute
+			left: 0
+			top: 0  
 			width: 427px 
 			height: 427px 
 			background: #000
 			border-radius: 427px
-					
+			+transition(all .2s linear)
+			opacity: .5 
+		.video__play
+			+s(play)
+			position: absolute
+			left: 155px  
+			top: 155px 
+			z-index: 20 
+			span
+				font-size: 14px 
+				color: #B4D42E 
+				width: 100px 
+				left: 50%
+				top: 130px 
+				margin-left: -50px  
+				position: absolute
+				text-align: center
+			
