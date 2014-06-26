@@ -1,5 +1,7 @@
 head.ready(function() {
 
+
+    $('.section1').addClass('a');
 	var agent = navigator.userAgent,
 	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 

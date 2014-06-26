@@ -45,6 +45,12 @@
 		top: 50%
 		margin-top: -260px
 		left: 0 
+		opacity: 0
+		+transition(all 1s linear)
+		+transition-delay(.4s)
+	&.a
+		.home__green,.home__blue
+			opacity: 1 
 	.home__blue
 		z-index: 3
 		background:  url(../img/blue.png) no-repeat 50% 50% 
@@ -64,6 +70,16 @@
 		margin-left: -500px 
 		background: url("../img/homeshadow.png") 
 		z-index: 8 
+	.home__window,.home__shadow
+		opacity: 0
+		+transition(all .9s linear) 
+		+transition-delay(1s)
+		+transform(scale(.8))
+	&.a
+		.home__window,.home__shadow
+			opacity: 1 
+			+transform(scale(1))
+		
 	.home__logo
 		position: absolute
 		top: 100px 
