@@ -51,7 +51,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 
 .in { height: 100%; }
 
-.section { background: url(../img/bg1.jpg) no-repeat 0 0; -moz-background-size: cover 100%; -webkit-background-size: cover 100%; background-size: cover 100%; overflow: hidden; position: relative; }
+.section { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; }
 
 @-moz-keyframes wave { 0% { top: 0px; }
   50% { top: 10px; }
@@ -78,7 +78,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .gobottom .gobottom__icon1 { background: url('../img/icons-se15e2d7294.png') 0 -797px no-repeat; width: 28px; height: 44px; display: inline-block; position: relative; -webkit-animation: wave 1s linear infinite both; -moz-animation: wave 1s linear infinite both; -ms-animation: wave 1s linear infinite both; -o-animation: wave 1s linear infinite both; animation: wave 1s linear infinite both; }
 .gobottom span { display: block; margin-top: 19px; text-align: center; font-family: bereg, sans-serif; font-size: 14px; color: #b4d611; }
 
-.home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; }
+.home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; background-size: cover; }
 .home .home__wraplines { height: 550px; top: 320px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
 .home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 550px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.8s; -moz-transition: opacity 1s linear 0.8s; -o-transition: opacity 1s linear 0.8s; transition: opacity 1s linear 0.8s; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
@@ -92,7 +92,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .home .home__top .home__toptext { font-size: 25px; color: #565555; text-align: right; white-space: nowrap; padding-right: 52px; padding-top: 33px; line-height: 32px; }
 .home .home__top .home__topsubtext { font-size: 16px; color: #a3c32f; position: absolute; bottom: -0.5em; right: 22px; width: 180px; text-align: center; }
 
-.descr { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; }
+.descr { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; background-size: cover; }
 .descr .descr__top { margin-top: 100px; background: url('../img/icons-se15e2d7294.png') 0 -998px no-repeat; width: 317px; height: 195px; position: relative; white-space: nowrap; color: #e8e7e7; font-family: bereg, sans-serif; font-size: 24px; text-align: right; line-height: 1; }
 .descr .descr__top h2 { font-size: 48px; font-weight: normal; margin-bottom: 20px; }
 .descr .descr__top .descr__topwrap { position: absolute; top: 55px; right: 42px; }
