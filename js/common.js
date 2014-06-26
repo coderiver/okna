@@ -10,9 +10,26 @@ head.ready(function() {
         goto(n);
         return false;
     });
+    s2 = $(".section2").offset().top;
+    s3 = $(".section3").offset().top;
+    s4 = $(".section4").offset().top;
+    s5 = $(".section5").offset().top;
+    s6 = $(".section6").offset().top;
+    s7 = $(".section7").offset().top;
+    sp = 100;
     $(window).scroll(function(event) {
         ttop = $(document).scrollTop();
-        console.log(ttop);
+        //console.log(ttop);
+        if(ttop>s2-sp){$('.section2').addClass('a');}
+        if(ttop>s3-sp){$('.section3').addClass('a');}
+        if(ttop>s4-sp){$('.section4').addClass('a');}
+        if(ttop>s5-sp){$('.section5').addClass('a');}
+        if(ttop>s6-sp){$('.section6').addClass('a');}
+        if(ttop>s7-sp){$('.section7').addClass('a');}
+
+        $('.section').each(function(){
+            $(this)
+        })
     });
 
     // first slide
