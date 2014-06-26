@@ -2,3 +2,176 @@
 	height: 1016px 
 	background:  url(../img/bg5.jpg) no-repeat 50% 50%
 	background-size: cover
+	+reg
+
+	.in
+		position: relative
+		.site-in
+			position: absolute
+			top: 0
+			right: 0
+
+	.design__head
+		position: absolute
+		top: 84px
+		right: 0
+		height: 148px
+		width: 295px
+		.design__headwrap
+			position: relative
+			padding: 45px 40px 0 0
+			font-size: 32px
+			line-height: 1.1
+			text-transform: uppercase
+			span
+				text-transform: none
+				font-size: 33px
+			em
+				color: #b3d60d
+				font-style: normal
+				display: inline-block
+				&:first-letter
+					text-transform: uppercase
+			i
+				position: absolute
+				top: 0
+				right: 0
+				display: inline-block
+				+s(design-head-pic)
+
+	//tab
+	.tab
+		position: absolute
+		top: 118px
+		left: 0
+		font-size: 0
+		overflow: hidden  
+		.tab__item
+			position: relative 
+			display: inline-block
+			cursor: pointer
+			&:hover
+				span
+					color: #b3d60d
+					border-color: #b3d60d
+			&.is-active
+				.tab__link
+					position: relative
+					color: #3a3a3a
+					&:before
+						position: absolute
+						content: ''
+						top: 0
+						left: 0
+						right: 0
+						bottom: 0
+						border: 2px solid #b3d60d
+				span
+					border: none
+		.tab__link
+			padding: 26px 28px
+			color: #cccccc
+			font-size: 24px
+			line-height: 1
+			text-decoration: none  
+			display: block 
+			span
+				line-height: 1
+				border-bottom: 1px dotted #ccc
+				display: inline-block
+
+	.tab-cont
+		position: absolute
+		top: 255px
+		left: 0
+		right: 0
+		bottom: 0
+		font-size: 14px
+		color: #3e3e3e
+		strong
+			color: #b3d60d
+		.design__text-top, .design__text-bottom 
+			position: absolute
+			width: 400px
+		&.tab-cont_1
+			background: url(../img/bg-tab-1.png) no-repeat 0 0
+			.design__circle
+				position: absolute
+				right: 175px
+				bottom: 50px
+				padding: 46px 24px
+				height: 330px
+				width: 330px
+				text-align: center
+				background: #b3d60d
+				+border-radius(50%)
+				+box
+			.design__icon
+				display: inline-block
+				+s(design-circle-ico)
+			h3
+				padding: 23px 0 26px
+				line-height: 1
+				font-size: 24px
+				font-weight: normal
+				color: #fff
+		&.tab-cont_2
+			background: url(../img/tab-bg-2.png) no-repeat 45px 0
+			.design__text-top
+				left: 553px
+				&.design__text-top_1
+					top: 42px
+				&.design__text-top_2
+					top: 114px
+				&.design__text-top_3
+					top: 191px
+			.design__text-bottom 
+				left: 99px
+				&.design__text-bottom_1
+					top: 471px
+				&.design__text-bottom_2
+					top: 545px
+		&.tab-cont_3
+			background: url(../img/tab-bg-3.png) no-repeat 155px 0
+			.design__text-top, .design__text-bottom 
+				width: 362px
+				&.design__text-top_1
+					top: 80px
+					left: 555px
+				&.design__text-top_2
+					top: 195px
+					left: 584px
+				&.design__text-top_3
+					top: 332px
+					left: 542px
+			.design__block
+				position: absolute
+				top: 460px
+				left: 560px
+				bottom: 0
+				width: 355px
+				h3
+					padding: 18px 0
+					font-size: 17px
+					+bold
+				.design__pic
+					display: inline-block
+					+s(tab3-pic)
+
+
+
+	//site-in
+	.site-in
+		padding: 24px 19px 17px 91px
+		color: #b3d60d
+		line-height: 1
+		font-size: 15px
+		text-decoration: none
+		background: #3a3a3b
+		display: inline-block
+		.site-in__pic
+			position: absolute
+			left: 17px
+			top: 50%
+			margin-top: -18px
+			+s(site-in-pic)
