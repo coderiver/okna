@@ -13,7 +13,13 @@
 	overflow: hidden
 	position: relative
 
-
++keyframes(wave)
+	0%
+		top: 0px 
+	50%
+		top: 10px 
+	100%
+		top: 0px 
 
 .gobottom
 	position: absolute
@@ -26,6 +32,11 @@
 	.gobottom__icon
 		+s(gobottom)
 		display: inline-block
+	.gobottom__icon1
+		+s(mouse)
+		display: inline-block
+		position: relative
+		+animation(wave 1s linear infinite both)
 	span
 		display: block
 		margin-top: 19px 
@@ -37,24 +48,36 @@
 .home
 	background: url(../img/bg1.jpg) no-repeat 50% 50%
 	height: 1042px 
+	overflow: hidden
+	.home__wraplines
+		height: 550px 
+		top: 320px 
+		width: 1920px
+		left: 50% 
+		position: absolute
+		margin-left: -960px 
 	.home__green,.home__blue
 		position: absolute
 		z-index: 6
 		height: 550px 
 		background:  url(../img/green.png) no-repeat 50% 50% 
 		width: 100% 
-		top: 50%
-		margin-top: -260px
-		left: 0 
+		top: 0
+		left: 0px 
+		//top: 50%
+		//margin-top: -260px
+		//left: 0 
 		opacity: 0
-		+transition(all 1s linear)
-		+transition-delay(.4s)
+		+transition(opacity 1s linear .8s)
+		//+transition-delay(.8s)
 	&.a
 		.home__green,.home__blue
 			opacity: 1 
 	.home__blue
 		z-index: 3
+		//3top: 325px 
 		background:  url(../img/blue.png) no-repeat 50% 50% 
+		+transition(opacity 1s linear .4s)
 	.home__window
 		position: absolute
 		left: 50%
@@ -75,7 +98,7 @@
 		opacity: 0
 		+transition(all .9s linear) 
 		+transition-delay(1s)
-		+transform(scale(.8))
+		+transform(scale(1))
 	&.a
 		.home__window,.home__shadow
 			opacity: 1 

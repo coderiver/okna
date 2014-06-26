@@ -24,19 +24,28 @@
 				left: 34px 
 				opacity: 1 
 	li
-		margin-bottom: 22px 
+		margin-bottom: 23px 
 		position: relative
 		&.is-active
 			i
 				background: #000
 				opacity: 1  
 			span
-				color: #363636 
+				color: #363636
+		&.is-gone
+			position: relative
+			&:before
+				position: absolute
+				+s(dots)
+				content: ' '
+				//background: red 
+				top: 22px 
+				left: 8px 
 	i
 		display: block
 		width: 12px 
 		height: 12px 
-		border: 3px solid #000 
+		border: 3px solid #363636 
 		opacity: .22 
 		border-radius: 20px
 		+transition(all .1s linear)
@@ -59,7 +68,7 @@
 		i
 			border-color: #FFF 
 		span
-			color: #000 
+			color: #eee 
 		li
 			&.is-active
 				i
@@ -67,5 +76,10 @@
 					opacity: 1  
 				span
 					color: #eee 
-	
+		li.is-gone
+			&:before
+				+s(dots1)
+	&.nav_black
+		span
+			color: #363636 
 		 

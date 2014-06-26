@@ -1,7 +1,41 @@
 head.ready(function() {
+    function goto(n){
+        $('html, body').animate({
+            scrollTop: $(".section"+n).offset().top
+        }, 1000);
+    }
+    $('.nav__ul a').click(function(event) {
+        n = $(this).attr('href');
+        n = n.substr(1);
+        goto(n);
+        return false;
+    });
+    $(window).scroll(function(event) {
+        ttop = $(document).scrollTop();
+        console.log(ttop);
+    });
 
-
+    // first slide
     $('.section1').addClass('a');
+    
+    $('.gobottom').click(function(event) {
+        goto(2);
+    });
+    // parallax on main
+    $('.section123').mousemove(function(e){
+        var amountMovedX = (e.pageX * -1 / 6);
+        var amountMovedY = (e.pageY * -1 / 6);
+        var x = -(e.pageX + this.offsetLeft) / 5;
+        var y = -(e.pageY + this.offsetTop) / 5;
+        $('.home__blue').css({'margin-top':y + 'px','margin-left': x + 'px'});
+        $('.home__green').css({'margin-top':y/2 + 'px','margin-left': x/2 + 'px'});
+    });
+
+
+   //2
+
+
+    
 	var agent = navigator.userAgent,
 	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
@@ -9,6 +43,7 @@ head.ready(function() {
 		$(".js-popup").hide();
 	});
 
+    //slide 5
 	function tab() {
        $(".js-tab").each(function(){
          var tab_link = $(this).find("a");
@@ -28,6 +63,22 @@ head.ready(function() {
        });
 	}
 	tab();
+    //todo - slides switch
+
+    // slide 6
+    $('.furn__sw a').click(function(event) {
+        $('.furn__sw a').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.furn__slide').hide();
+        idd = $(this).attr('href');
+        $(idd).addClass('is-shown').show();
+        return false;
+    });
+
+
+    //slide7
+    //fotos zoom
+
 
 	// console.log($('body').html());
 });
