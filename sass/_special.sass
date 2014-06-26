@@ -1,5 +1,5 @@
 .special
-	height: 1015px 
+	height: 1240px 
 	background: #FAFAFA url(../img/bg4.jpg) no-repeat 50% 50%
 	background-size: cover
 
@@ -27,3 +27,180 @@
 	top: 205px  
 	width: 838px
 	z-index: 20  
+	table
+		thead
+			th
+				text-align: left
+				font-weight: normal
+				
+				font-size: 18px 
+				color: #F6F6F6
+				text-transform: uppercase
+				div
+					padding: 22px
+					border: 4px solid rgba(#fff, .3) 
+				span
+					display: block
+					color: #D6FCAC 
+				&.is-selected
+					div
+						border-color: #fff 
+						background: #5E9A3A 
+				&.firsth
+					padding-right: 10px 
+		tbody
+			th
+				//width: 331px 
+				//padding-right: 18px 
+				padding: 23px
+				text-align: left
+				font-weight: normal
+				font-size: 16px 
+				text-transform: uppercase
+				padding-right: 0 
+				color: #F6F6F6 
+				&.is-selected
+					background: #5F9B3B 
+				p
+					font-size: 14px 
+					color: #D6FCAC
+					line-height: 1.3
+					margin-top: 15px   
+					text-transform: none
+			td
+				width: 250
+				padding: 26px  
+				&.is-selected
+					background: #5F9B3B 
+			.is-lite
+				td,th
+					background: #E6F2D8
+					color: #353535 
+					&.is-selected
+						background: #E1EDDA 
+			.kamer
+				vertical-align: middle
+				font-size: 18px 
+				color: #FFFFFF
+				padding-right: 0 
+				em
+					font-style: normal 
+					color: #D6FCAC 
+			.har
+				font-size: 14px 
+				color: #F6F6F6 
+			.width
+				color: #353535
+				font-size: 14px  
+				h3
+					font-weight: normal
+					font-size: 14px 
+					color: #81847F
+					margin-bottom: 23px 
+					strong
+						font-weight: normal
+						display: block
+						font-size: 30px 
+						color: #509A3D 
+			.koeff
+				font-size: 18px 
+				color: #353535
+				vertical-align: middle
+				span
+					color: #509A3D 
+			.shir
+				font-size: 14px 
+				color: #D6FCAC
+				strong
+					display: block
+					font-size: 30px 
+					color: #FFFFFF 
+			.order
+				
+				background: transparent !important 
+				padding: 0 
+				padding-top: 17px 
+				padding-right: 10px 
+				&+.order
+					padding-right: 0 
+				a
+					+bold
+					font-size: 16px 
+					text-transform: uppercase
+					color: #fff
+					display: block
+					border: 3px solid rgba(#fff, .4)  
+					text-align: center
+					height: 45px 
+					line-height: 45px 
+					text-decoration: none
+					i
+						display: inline-block
+						margin-left: 19px 
+						+s(arr)
+					&:hover
+						background: #353535 
+						color: #F3F3F3 
+						border-color: #353535 
+				&.is-selected
+					a
+						background: #353535 
+						color: #F3F3F3 
+						border-color: #353535 
+.vam
+	display: inline-block
+	max-width: 180px 
+	vertical-align: middle
+.help
+	display: inline-block
+	width: 20px 
+	height: 20px
+	line-height: 22px
+	border: 2px solid #fff
+	font-size: 16px    
+	
+	color: #fff 
+	text-decoration: none
+	border-radius: 22px
+	text-align: center
+	vertical-align: middle
+	border-color: rgba(#fff, .3) 
+	position: relative
+	margin-left: 15px 
+	.is-lite & 
+		border-color: rgba(#000, .3) 
+		color: #000 
+		color: #353535
+		&:hover
+			background: #000
+			color: #D6FCAC
+			border-color: #000   
+	.help__popup
+		display: none
+		position: absolute
+		left: 45px 
+		top: -23px 
+		background: #fff
+		padding: 28px  
+		line-height: 1.5 
+		width: 300px 
+		font-size: 14px 
+		color: #000
+		z-index: 200 
+		text-align: left
+		color: #525050 
+		box-shadow: 0 0 15px rgba(#000, .2)
+		&:before
+			position: absolute
+			top: 23px 
+			left: -12px 
+			+s(arrl)
+			content: ' '
+		.help__close
+
+	&:hover
+		background: #fff
+		border-color: #fff
+		color: #000   
+		.help__popup
+			display: block
