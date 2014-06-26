@@ -172,6 +172,8 @@
 		color: #FFFFFF
 		line-height: 22px
 		text-align: right
+		+transition(all .6s linear 0.8s)
+		opacity: 0 
 		strong
 			display: block
 			font-weight: normal
@@ -189,6 +191,8 @@
 		margin-left: 92px 
 		padding-top: 81px 
 		+reg
+		opacity: 0
+		+transition(all .5s linear 1s) 
 		h3
 			font-size: 24px 
 			font-weight: normal
@@ -214,6 +218,18 @@
 				margin-bottom: 18px 
 				position: relative
 				padding-left: 32px 
+				opacity: 0
+				+transition(all .2s linear 1.4s) 
+				&+li
+					+transition-delay(1.6s)
+				&+li+li
+					+transition-delay(1.8s)
+				&+li+li+li
+					+transition-delay(2s)
+				&+li+li+li+li
+					+transition-delay(2.2s)
+				&+li+li+li+li+li
+					+transition-delay(2.4s)
 				&:before
 					content: ' '
 					+s(bul)
@@ -238,6 +254,8 @@
 		background: #000
 		border-radius: 427px
 		cursor: pointer
+		opacity: 0 
+		+transition(all .6s linear 0.3s)
 		&:hover
 			.video__overlay
 				opacity: 0 
@@ -272,4 +290,14 @@
 				margin-left: -50px  
 				position: absolute
 				text-align: center
-			
+	&.a
+		.video
+			opacity: 1
+			top: 160px  
+		.descr__about
+			opacity: 1 
+			li
+				opacity: 1 
+		.descr__edin
+			opacity: 1 
+		
