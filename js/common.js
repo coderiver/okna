@@ -39,7 +39,7 @@ head.ready(function() {
         goto(2);
     });
     // parallax on main
-    $('.section123').mousemove(function(e){
+    $('.section1').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
         var x = -(e.pageX + this.offsetLeft) / 5;
