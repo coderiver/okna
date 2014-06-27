@@ -74,7 +74,7 @@ body
 		//margin-top: -260px
 		//left: 0 
 		opacity: 0
-		+transition(opacity 1s linear .8s)
+		+transition(opacity 1s linear 1.2s)
 		//+transition-delay(.8s)
 	&.a
 		.home__green,.home__blue
@@ -83,7 +83,7 @@ body
 		z-index: 3
 		//3top: 325px 
 		background:  url(../img/blue.png) no-repeat 50% 50% 
-		+transition(opacity 1s linear .4s)
+		+transition(opacity 1s linear .7s)
 	.home__window
 		position: absolute
 		left: 50%
@@ -124,7 +124,7 @@ body
 	.home__window,.home__shadow
 		opacity: 0
 		+transition(all .9s linear) 
-		+transition-delay(1s)
+		+transition-delay(2s)
 		+transform(scale(1))
 	&.a
 		.home__window,.home__shadow
@@ -198,7 +198,7 @@ body
 		color: #FFFFFF
 		line-height: 22px
 		text-align: right
-		+transition(all .6s linear 0.8s)
+		+transition(all .6s linear 1.5s)
 		opacity: 0 
 		z-index: 20 
 		position: relative
@@ -221,7 +221,7 @@ body
 		+reg
 		opacity: 0
 		z-index: 20 
-		+transition(all .5s linear 1s) 
+		+transition(all .5s linear 2s) 
 		h3
 			font-size: 24px 
 			font-weight: normal
@@ -248,17 +248,17 @@ body
 				position: relative
 				padding-left: 32px 
 				opacity: 0
-				+transition(all .2s linear 1.4s) 
+				+transition(all .2s linear 2s) 
 				&+li
-					+transition-delay(1.6s)
-				&+li+li
-					+transition-delay(1.8s)
-				&+li+li+li
-					+transition-delay(2s)
-				&+li+li+li+li
 					+transition-delay(2.2s)
-				&+li+li+li+li+li
+				&+li+li
 					+transition-delay(2.4s)
+				&+li+li+li
+					+transition-delay(2.6s)
+				&+li+li+li+li
+					+transition-delay(2.8s)
+				&+li+li+li+li+li
+					+transition-delay(3s)
 				&:before
 					content: ' '
 					+s(bul)
@@ -284,7 +284,7 @@ body
 		border-radius: 427px
 		cursor: pointer
 		opacity: 0 
-		+transition(all .6s linear 0.3s)
+		+transition(all .6s linear 0.6s)
 		&:hover
 			.video__overlay
 				opacity: 0 

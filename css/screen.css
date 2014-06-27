@@ -82,15 +82,15 @@ body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0
 
 .home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; background-size: cover; }
 .home .home__wraplines { height: 550px; top: 280px; top: 220px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
-.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 550px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.8s; -moz-transition: opacity 1s linear 0.8s; -o-transition: opacity 1s linear 0.8s; transition: opacity 1s linear 0.8s; }
+.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 550px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 1.2s; -moz-transition: opacity 1s linear 1.2s; -o-transition: opacity 1s linear 1.2s; transition: opacity 1s linear 1.2s; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
-.home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.4s; -moz-transition: opacity 1s linear 0.4s; -o-transition: opacity 1s linear 0.4s; transition: opacity 1s linear 0.4s; }
+.home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
 .home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; z-index: 220; }
 .home .home__window img { position: relative; z-index: 222; }
 .home .home__window .parallax { width: 530px; height: 591px; left: 43px; top: 48px; position: absolute; z-index: 221; overflow: hidden; }
 .home .home__window .parallax div { width: 1024px; height: 768px; width: 602px; height: 656px; top: 0; left: 0; position: absolute; background: url("../img/view.png") no-repeat 0 0; }
 .home .home__shadow { position: absolute; top: 50%; left: 50%; width: 1000px; height: 760px; margin-top: -380px; margin-left: -500px; background: url("../img/homeshadow.png"); z-index: 8; }
-.home .home__window, .home .home__shadow { opacity: 0; -webkit-transition: all 0.9s linear; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; transition: all 0.9s linear; -webkit-transition-delay: 1s; -moz-transition-delay: 1s; -o-transition-delay: 1s; transition-delay: 1s; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+.home .home__window, .home .home__shadow { opacity: 0; -webkit-transition: all 0.9s linear; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; transition: all 0.9s linear; -webkit-transition-delay: 2s; -moz-transition-delay: 2s; -o-transition-delay: 2s; transition-delay: 2s; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
 .home.a .home__window, .home.a .home__shadow { opacity: 1; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
 .home .home__logo { position: absolute; top: 100px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -582px no-repeat; width: 245px; height: 68px; font: 0/0 a; text-shadow: none; color: transparent; z-index: 1000; cursor: pointer; }
 .home .home__top { position: absolute; top: 72px; right: 0; background: url('../img/icons-sc6aebcf814.png') 0 -1805px no-repeat; width: 328px; height: 129px; font-family: bereg, sans-serif; z-index: 120; }
@@ -102,25 +102,25 @@ body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0
 .descr .descr__top h2 { font-size: 48px; font-weight: normal; margin-bottom: 20px; }
 .descr .descr__top .descr__topwrap { position: absolute; top: 55px; right: 42px; }
 .descr .descr__top { margin-top: 100px; float: right; position: relative; z-index: 11; }
-.descr .descr__edin { clear: both; float: right; width: 373px; padding-top: 83px; font-size: 14px; color: white; line-height: 22px; text-align: right; -webkit-transition: all 0.6s linear; -webkit-transition-delay: 0.8s; -moz-transition: all 0.6s linear 0.8s; -o-transition: all 0.6s linear 0.8s; transition: all 0.6s linear 0.8s; opacity: 0; z-index: 20; position: relative; }
+.descr .descr__edin { clear: both; float: right; width: 373px; padding-top: 83px; font-size: 14px; color: white; line-height: 22px; text-align: right; -webkit-transition: all 0.6s linear; -webkit-transition-delay: 1.5s; -moz-transition: all 0.6s linear 1.5s; -o-transition: all 0.6s linear 1.5s; transition: all 0.6s linear 1.5s; opacity: 0; z-index: 20; position: relative; }
 .descr .descr__edin strong { display: block; font-weight: normal; color: #b4d42e; font-size: 24px; margin-bottom: 5px; }
 .descr .descr__edin p { margin-bottom: 22px; }
 .descr .descr__edin p a { color: #b4d42e; text-decoration: none; }
-.descr .descr__about { float: left; clear: both; margin-left: 92px; padding-top: 81px; font-family: bereg, sans-serif; opacity: 0; z-index: 20; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 1s; -moz-transition: all 0.5s linear 1s; -o-transition: all 0.5s linear 1s; transition: all 0.5s linear 1s; }
+.descr .descr__about { float: left; clear: both; margin-left: 92px; padding-top: 81px; font-family: bereg, sans-serif; opacity: 0; z-index: 20; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 2s; -moz-transition: all 0.5s linear 2s; -o-transition: all 0.5s linear 2s; transition: all 0.5s linear 2s; }
 .descr .descr__about h3 { font-size: 24px; font-weight: normal; color: white; margin-bottom: 29px; }
 .descr .descr__about h3 a { color: #b4d42e; text-decoration: none; display: inline-block; position: relative; }
 .descr .descr__about h3 a:before { position: absolute; bottom: -4px; content: " "; left: 0; width: 100%; border-bottom: 3px solid #b4d42e; }
 .descr .descr__about ul { list-style: none; color: #d1cdcd; font-size: 16px; }
-.descr .descr__about ul li { margin-bottom: 18px; position: relative; padding-left: 32px; opacity: 0; -webkit-transition: all 0.2s linear; -webkit-transition-delay: 1.4s; -moz-transition: all 0.2s linear 1.4s; -o-transition: all 0.2s linear 1.4s; transition: all 0.2s linear 1.4s; }
-.descr .descr__about ul li + li { -webkit-transition-delay: 1.6s; -moz-transition-delay: 1.6s; -o-transition-delay: 1.6s; transition-delay: 1.6s; }
-.descr .descr__about ul li + li + li { -webkit-transition-delay: 1.8s; -moz-transition-delay: 1.8s; -o-transition-delay: 1.8s; transition-delay: 1.8s; }
-.descr .descr__about ul li + li + li + li { -webkit-transition-delay: 2s; -moz-transition-delay: 2s; -o-transition-delay: 2s; transition-delay: 2s; }
-.descr .descr__about ul li + li + li + li + li { -webkit-transition-delay: 2.2s; -moz-transition-delay: 2.2s; -o-transition-delay: 2.2s; transition-delay: 2.2s; }
-.descr .descr__about ul li + li + li + li + li + li { -webkit-transition-delay: 2.4s; -moz-transition-delay: 2.4s; -o-transition-delay: 2.4s; transition-delay: 2.4s; }
+.descr .descr__about ul li { margin-bottom: 18px; position: relative; padding-left: 32px; opacity: 0; -webkit-transition: all 0.2s linear; -webkit-transition-delay: 2s; -moz-transition: all 0.2s linear 2s; -o-transition: all 0.2s linear 2s; transition: all 0.2s linear 2s; }
+.descr .descr__about ul li + li { -webkit-transition-delay: 2.2s; -moz-transition-delay: 2.2s; -o-transition-delay: 2.2s; transition-delay: 2.2s; }
+.descr .descr__about ul li + li + li { -webkit-transition-delay: 2.4s; -moz-transition-delay: 2.4s; -o-transition-delay: 2.4s; transition-delay: 2.4s; }
+.descr .descr__about ul li + li + li + li { -webkit-transition-delay: 2.6s; -moz-transition-delay: 2.6s; -o-transition-delay: 2.6s; transition-delay: 2.6s; }
+.descr .descr__about ul li + li + li + li + li { -webkit-transition-delay: 2.8s; -moz-transition-delay: 2.8s; -o-transition-delay: 2.8s; transition-delay: 2.8s; }
+.descr .descr__about ul li + li + li + li + li + li { -webkit-transition-delay: 3s; -moz-transition-delay: 3s; -o-transition-delay: 3s; transition-delay: 3s; }
 .descr .descr__about ul li:before { content: " "; background: url('../img/icons-sc6aebcf814.png') 0 -1567px no-repeat; width: 20px; height: 20px; position: absolute; left: 0; top: -1px; }
 .descr .descr__about ul em { color: #b4d42e; font-style: normal; font-family: bebold, sans-serif; }
 .descr .descr__about ul strong { font-weight: normal; color: white; font-family: bebold, sans-serif; }
-.descr .video { position: absolute; left: 92px; top: 160px; z-index: 10; width: 427px; height: 427px; background: black; border-radius: 427px; cursor: pointer; opacity: 0; -webkit-transition: all 0.6s linear; -webkit-transition-delay: 0.3s; -moz-transition: all 0.6s linear 0.3s; -o-transition: all 0.6s linear 0.3s; transition: all 0.6s linear 0.3s; }
+.descr .video { position: absolute; left: 92px; top: 160px; z-index: 10; width: 427px; height: 427px; background: black; border-radius: 427px; cursor: pointer; opacity: 0; -webkit-transition: all 0.6s linear; -webkit-transition-delay: 0.6s; -moz-transition: all 0.6s linear 0.6s; -o-transition: all 0.6s linear 0.6s; transition: all 0.6s linear 0.6s; }
 .descr .video:hover .video__overlay { opacity: 0; }
 .descr .video .video__pic { width: 427px; height: 427px; background: black url(../img/video.jpg) no-repeat 50% 50%; border-radius: 427px; position: relative; }
 .descr .video .video__overlay { position: absolute; left: 0; top: 0; width: 427px; height: 427px; background: black; border-radius: 427px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; opacity: 0.5; }
