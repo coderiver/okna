@@ -101,6 +101,15 @@ head.ready(function() {
 
 
     //slide7
+    $('.gallery__item').click(function(event) {
+        href = $(this).attr('href');
+        $('.gallery__img').html('<img src="'+href+'">');
+        $('.gallery__big').fadeIn()
+        return false;
+    });
+    $('.gallery__close').click(function(event) {
+        $('.gallery__big').fadeOut();
+    });
     //fotos zoom
 
 
