@@ -4,17 +4,51 @@ head.ready(function() {
 
 
 
-    // $(document).bind(event, function(e){
-    //     $(".js-popup").hide();
-    // });
+    running = 0;
     function goto(n){
-        $('body').addClass('running');
-        $('html, body').animate({
-            scrollTop: $(".section"+n).offset().top + 2
-        }, 1000,function(){
-            $('body').removeClass('running');
-        });
+
+        if( $(".section"+n).hasClass('is-active') || running){console.log('dont run');}
+        else{
+            console.log('goto'+n);
+            running = 1;
+            $('.section.is-active').removeClass('is-active').addClass('was-active');
+        
+            $(".section"+n).addClass('is-active').css({'opacity':0}).animate({
+                opacity: 1
+              }, 1000, function() {
+                // Animation complete.
+                $(this).addClass('a');
+                $('.section.was-active').removeClass('was-active');
+                
+                setTimeout(function(){running = 0;},1000);
+                if(n==5){
+                       if($('.tab-cont.is-shown').length){}else{
+                        $(".js-tab1").addClass('is-shown');
+                        }
+                }
+              });
+
+        }
+        
     }
+    function next(){
+        cur = $('.section.is-active').data('nomer');
+        if(cur<7){goto(cur+1);}
+    }
+    function prev(){
+        cur = $('.section.is-active').data('nomer');
+        if(cur>1){goto(cur-1);}
+    }
+
+    $(window).scroll(function() {
+       if($(window).scrollTop() + $(window).height() == $(document).height()) {
+           next();
+       }
+       if($(window).scrollTop()==0){
+            prev()
+       }
+    });
+    //goto(1);
     $('.nav__ul a').click(function(event) {
         n = $(this).attr('href');
         n = n.substr(1);
@@ -32,58 +66,58 @@ head.ready(function() {
     var curr = 1;
     var curr1 = 1;
     $(window).scroll(function(event) {
-        ttop = $(document).scrollTop();
-        h = $(window).height();
-        //console.log(ttop);
-        if(ttop>s2-sp){$('.section2').addClass('a');}
-        if(ttop>s3-sp){$('.section3').addClass('a');}
-        if(ttop>s4-sp){$('.section4').addClass('a');}
-        if(ttop>s5-sp){
-            $('.section5').addClass('a');
-            if($('.tab-cont.is-shown').length){}else{
-                $(".js-tab1").addClass('is-shown');
-            }
-        }
-        if(ttop>s6-sp){$('.section6').addClass('a');}
-        if(ttop>s7-sp){$('.section7').addClass('a');}
+        // ttop = $(document).scrollTop();
+        // h = $(window).height();
+        // //console.log(ttop);
+        // if(ttop>s2-sp){$('.section2').addClass('a');}
+        // if(ttop>s3-sp){$('.section3').addClass('a');}
+        // if(ttop>s4-sp){$('.section4').addClass('a');}
+        // if(ttop>s5-sp){
+        //     $('.section5').addClass('a');
+        //     if($('.tab-cont.is-shown').length){}else{
+        //         $(".js-tab1").addClass('is-shown');
+        //     }
+        // }
+        // if(ttop>s6-sp){$('.section6').addClass('a');}
+        // if(ttop>s7-sp){$('.section7').addClass('a');}
 
 
-        var st = $(this).scrollTop();
+        // var st = $(this).scrollTop();
         
-           if (st > lastScrollTop){
-               // downscroll code
-               //console.log('down');
-               if(ttop+h -20>s2){curr1 = 2}
-               if(ttop+h -20>s3){curr1 = 3}
-               if(ttop+h -20>s4){curr1 = 4}
-               if(ttop+h -20>s5){curr1 = 5}
-               if(ttop+h -20>s6){curr1 = 6}
-               if(ttop+h -20>s7){curr1 = 7}
-                console.log(curr1);
-           } else {
-              // upscroll code
-                if(ttop<s7){curr1 = 6}
-                if(ttop<s6){curr1 = 5}
-                if(ttop<s5){curr1 = 4}
-                if(ttop<s4){curr1 = 3}
-                if(ttop<s3){curr1 = 2}
-                if(ttop<s2){curr1 = 1}
+        //    if (st > lastScrollTop){
+        //        // downscroll code
+        //        //console.log('down');
+        //        if(ttop+h -20>s2){curr1 = 2}
+        //        if(ttop+h -20>s3){curr1 = 3}
+        //        if(ttop+h -20>s4){curr1 = 4}
+        //        if(ttop+h -20>s5){curr1 = 5}
+        //        if(ttop+h -20>s6){curr1 = 6}
+        //        if(ttop+h -20>s7){curr1 = 7}
+        //         console.log(curr1);
+        //    } else {
+        //       // upscroll code
+        //         if(ttop<s7){curr1 = 6}
+        //         if(ttop<s6){curr1 = 5}
+        //         if(ttop<s5){curr1 = 4}
+        //         if(ttop<s4){curr1 = 3}
+        //         if(ttop<s3){curr1 = 2}
+        //         if(ttop<s2){curr1 = 1}
                    
                
-            console.log(curr1);
-           }
-           if(!$('body').hasClass('running')){
+        //     console.log(curr1);
+        //    }
+        //    if(!$('body').hasClass('running')){
 
-                     if(curr!=curr1){
-                        $('body').addClass('running');
-                        goto(curr1);
-                        console.log(curr1);
-                        curr = curr1;
-                   }
-           }
+        //              if(curr!=curr1){
+        //                 //$('body').addClass('running');
+        //                 goto(curr1);
+        //                 console.log(curr1);
+        //                 curr = curr1;
+        //            }
+        //    }
           
            
-           lastScrollTop = st;
+        //    lastScrollTop = st;
 
         // determin nomer slide po bottom
 

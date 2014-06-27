@@ -47,7 +47,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .nav.nav_contrast li.is-gone:before { background: url('../img/icons-sc6aebcf814.png') 0 -2621px no-repeat; width: 2px; height: 14px; }
 .nav.nav_black span { color: #363636; }
 
-.running { overflow: hidden; }
+body { position: relative; overflow-y: scroll; }
 
 ::-webkit-scrollbar { display: none; }
 
@@ -55,7 +55,9 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 
 .in { height: 100%; }
 
-.section { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; }
+.section { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; position: absolute; top: 0; left: 0; right: 0; min-width: 960px; display: none; }
+.section.is-active, .section.was-active { z-index: 999; display: block; }
+.section.was-active { z-index: 998; }
 
 @-moz-keyframes wave { 0% { top: 0px; }
   50% { top: 10px; }
@@ -84,9 +86,9 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 
 .home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; background-size: cover; }
 .home .home__wraplines { height: 550px; top: 280px; top: 220px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
-.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 750px; background: url(../img/green.png) no-repeat 50% 50%; background-size: cover; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
+.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 750px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
-.home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.3s; -moz-transition: opacity 1s linear 0.3s; -o-transition: opacity 1s linear 0.3s; transition: opacity 1s linear 0.3s; background-size: cover; }
+.home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.3s; -moz-transition: opacity 1s linear 0.3s; -o-transition: opacity 1s linear 0.3s; transition: opacity 1s linear 0.3s; }
 .home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; z-index: 220; }
 .home .home__window img { position: relative; z-index: 222; }
 .home .home__window .parallax { width: 530px; height: 591px; left: 43px; top: 48px; position: absolute; z-index: 221; overflow: hidden; }
