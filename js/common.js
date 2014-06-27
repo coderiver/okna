@@ -62,21 +62,20 @@ head.ready(function() {
                 console.log(curr1);
            } else {
               // upscroll code
-            if(ttop<s7){curr1 = 6}
-            if(ttop<s6){curr1 = 5}
-            if(ttop<s5){curr1 = 4}
-            if(ttop<s4){curr1 = 3}
-            if(ttop<s3){curr1 = 2}
-            if(ttop<s2){curr1 = 1}
-               
-               
-               
-               
+                if(ttop<s7){curr1 = 6}
+                if(ttop<s6){curr1 = 5}
+                if(ttop<s5){curr1 = 4}
+                if(ttop<s4){curr1 = 3}
+                if(ttop<s3){curr1 = 2}
+                if(ttop<s2){curr1 = 1}
+                   
                
             console.log(curr1);
            }
            if(!$('body').hasClass('running')){
+
                      if(curr!=curr1){
+                        $('body').addClass('running');
                         goto(curr1);
                         console.log(curr1);
                         curr = curr1;
