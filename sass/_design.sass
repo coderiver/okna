@@ -258,4 +258,37 @@
 		top: 50%
 		margin-top: -18px
 		+s(site-in-pic)
++keyframes(bubles)
+	0%
+		top: 275px 
+	100%
+		top: -275px
+.bubles
+	width: 91px 
+	height: 275px 
+	overflow: hidden
+	position: absolute
+	left: 339px
+	top: 38px
+	div
+		width: 91px 
+		height: 275px
+		position: absolute
+		top: 0 
+		left: 0 
+		background: url(../img/bubles.png) no-repeat 0 0
+		+animation(bubles 6s linear infinite both)
+	.div1
+		+animation(bubles 6s linear infinite both)
+		+animation-delay(2s)
+		background-position: 0 100% 
+
+.is-shown
+	.bubles div
+		+animation(bubles 6s linear infinite both)
+		+animation-delay(2s)
+	.bubles .div1
+		+animation(bubles 6s linear infinite both)
+		+animation-delay(4s)
+		background-position: 0 100% 
 
