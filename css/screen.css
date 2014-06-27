@@ -313,7 +313,8 @@ body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0
 .furn .furn__title { position: absolute; left: 480px; top: 285px; font-size: 24px; font-weight: normal; color: white; }
 .furn .furn__title h2 { font-weight: normal; font-size: 24px; display: inline-block; border-bottom: 6px solid #b4d42e; padding-bottom: 16px; line-height: 1.2; }
 .furn .furn__title h2 span { display: block; color: #b4d42e; }
-.furn .furn__pic { width: 384px; height: 384px; border-radius: 384px; background: url(../img/pic.jpg) no-repeat 0 0; position: absolute; left: 92px; top: 325px; z-index: 30; }
+.furn .furn__pic { width: 384px; height: 384px; border-radius: 384px; position: absolute; left: 92px; top: 325px; z-index: 30; display: none; }
+.furn .furn__pic#furn1p { background: url(../img/pic.jpg) no-repeat 0 0; display: block; }
 .furn .furn__slide { position: absolute; right: 0; width: 480px; text-align: right; font-size: 14px; color: white; top: 520px; }
 .furn .furn__slide strong, .furn .furn__slide a { color: #b4d42e; text-decoration: none; font-weight: normal; }
 .furn .furn__slide h3 { font-size: 18px; margin-bottom: 13px; font-weight: normal; }
@@ -323,6 +324,7 @@ body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0
 .furn .furn__sw a:hover { border-color: white; }
 .furn .furn__sw a.is-active { border-width: 6px; border-color: #b4d42e; height: 60px; line-height: 60px; width: 60px; font-size: 24px; }
 .furn .furn__pic, .furn .furn__slide, .furn .furn__title, .furn .furn__sw { -webkit-transition: all 0.4s linear; -webkit-transition-delay: 1.3s; -moz-transition: all 0.4s linear 1.3s; -o-transition: all 0.4s linear 1.3s; transition: all 0.4s linear 1.3s; opacity: 0; }
+.furn.notransitions .furn__pic, .furn.notransitions .furn__slide { -webkit-transition: none; -moz-transition: none; -o-transition: none; transition: none; }
 .furn.a .furn__text { opacity: 1; }
 .furn.a .furn__pic, .furn.a .furn__slide, .furn.a .furn__bigpic, .furn.a .furn__title, .furn.a .furn__sw { opacity: 1; }
 

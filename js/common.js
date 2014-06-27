@@ -114,8 +114,8 @@ head.ready(function() {
     $('.section1').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
-        var x = -(e.pageX + this.offsetLeft) / 20;
-        var y = -(e.pageY + this.offsetTop) / 5;
+        var x = -(e.pageX) / 20;
+        var y = -(e.pageY) / 5;
         //y = 0;
         $('.home__blue').css({'margin-left': x + 'px'});
         $('.home__green').css({'margin-left': x/2 + 'px'});
@@ -162,11 +162,13 @@ head.ready(function() {
 
     // slide 6
     $('.furn__sw a').click(function(event) {
+        $('.furn').addClass("notransitions");
         $('.furn__sw a').removeClass('is-active');
         $(this).addClass('is-active');
-        $('.furn__slide').hide();
+        $('.furn__slide,.furn__pic').fadeOut();
         idd = $(this).attr('href');
-        $(idd).addClass('is-shown').show();
+        $(idd).fadeIn();
+        $(idd+'p').fadeIn();
         return false;
     });
 

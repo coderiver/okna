@@ -64,11 +64,15 @@
 		width: 384px 
 		height: 384px 
 		border-radius: 384px
-		background: url(../img/pic.jpg) no-repeat 0 0 
+		
 		position: absolute
 		left: 92px 
 		top: 325px 
 		z-index: 30 
+		display: none
+		&#furn1p
+			background: url(../img/pic.jpg) no-repeat 0 0 
+			display: block
 	.furn__slide
 		position: absolute
 		right: 0
@@ -121,6 +125,9 @@
 	.furn__pic,.furn__slide,.furn__title,.furn__sw
 		+transition(all .4s linear 1.3s) 
 		opacity: 0 
+	&.notransitions
+		.furn__pic,.furn__slide
+			+transition(none) 
 	&.a
 		.furn__text
 			opacity: 1
