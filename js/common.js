@@ -96,6 +96,14 @@ head.ready(function() {
         
     });
 
+    $(window).on('scroll',function(event) {
+        if($('body').hasClass('running')){
+            event.preventDefault();
+
+        }
+        
+    });
+
     // first slide, activate
     $('.section1').addClass('a');
     
