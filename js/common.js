@@ -2,9 +2,9 @@ head.ready(function() {
     var agent = navigator.userAgent,
     event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
-    $(document).bind(event, function(e){
-        $(".js-popup").hide();
-    });
+    // $(document).bind(event, function(e){
+    //     $(".js-popup").hide();
+    // });
     function goto(n){
         $('html, body').animate({
             scrollTop: $(".section"+n).offset().top
@@ -110,7 +110,15 @@ head.ready(function() {
     $('.gallery__close').click(function(event) {
         $('.gallery__big').fadeOut();
     });
-    //fotos zoom
+    $('.js-popup').click(function(event) {
+        $('.overlay').fadeIn(600,function(){
+            $('.popup').fadeIn();
+        });
+        return false
+    });
+    $('.popup__close,.overlay').click(function(event) {
+        $('.overlay,.popup').fadeOut();
+    });
 
 
 	// console.log($('body').html());
