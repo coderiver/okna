@@ -27,6 +27,8 @@
 		font-size: 14px 
 		color: #fff 
 		line-height: 1.4
+		opacity: 0
+		+transition(all .4s linear .7s) 
 		strong,a
 			font-weight: normal
 			text-decoration: none
@@ -37,6 +39,8 @@
 		bottom: 0
 		left: -20px  
 		text-align: center
+		opacity: 0
+		+transition(all .5s linear .4s) 
 		img
 			display: block
 	.furn__title
@@ -114,4 +118,11 @@
 				line-height: 60px
 				width: 60px  
 				font-size: 24px 
-	
+	.furn__pic,.furn__slide,.furn__title,.furn__sw
+		+transition(all .4s linear 1.3s) 
+		opacity: 0 
+	&.a
+		.furn__text
+			opacity: 1
+		.furn__pic,.furn__slide,.furn__bigpic,.furn__title,.furn__sw
+			opacity: 1 

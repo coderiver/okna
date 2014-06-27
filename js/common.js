@@ -1,4 +1,10 @@
 head.ready(function() {
+    var agent = navigator.userAgent,
+    event = (agent.match(/iPad/i)) ? "touchstart" : "click";
+
+    $(document).bind(event, function(e){
+        $(".js-popup").hide();
+    });
     function goto(n){
         $('html, body').animate({
             scrollTop: $(".section"+n).offset().top
@@ -32,14 +38,14 @@ head.ready(function() {
         })
     });
 
-    // first slide
+    // first slide, activate
     $('.section1').addClass('a');
     
     $('.gobottom').click(function(event) {
         goto(2);
     });
     // parallax on main
-    $('.section1').mousemove(function(e){
+    $('.section123').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
         var x = -(e.pageX + this.offsetLeft) / 5;
@@ -53,12 +59,7 @@ head.ready(function() {
 
 
     
-	var agent = navigator.userAgent,
-	event = (agent.match(/iPad/i)) ? "touchstart" : "click";
-
-	$(document).bind(event, function(e){
-		$(".js-popup").hide();
-	});
+	
 
     //slide 5
 	function tab() {

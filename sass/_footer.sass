@@ -43,7 +43,8 @@
 		text-decoration: none
 		padding: 0 28px
 		margin-top: 37px  
-		+transition(all .2s ease-in-out)
+		+transition(background .2s ease-in-out,border .2s ease-in-out,opacity .5s linear 1.5s)
+		opacity: 0 
 		i
 			display: inline-block
 			margin-left: 19px 
@@ -73,4 +74,21 @@
 			font-weight: normal
 			+bold
 			color: #B4D42E
-			 
+	.footer__about,.gallery,.footer__ask
+		opacity: 0
+		+transition(all .5s linear .3s) 
+	.gallery
+		+transition-delay(0.8s)
+	.footer__ask
+		+transition-delay(1.2s)
+	.footer__goask
+		//+transition-delay(1.5s)
+	&.a
+		.gallery
+			opacity: 1 
+		.footer__ask
+			opacity: 1 
+		.footer__goask
+			opacity: 1
+		.footer__about
+			opacity: 1 
