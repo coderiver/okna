@@ -3,7 +3,14 @@ head.ready(function() {
     event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
 
-
+    function getDocHeight() {
+        var D = document;
+        return Math.max(
+            D.body.scrollHeight, D.documentElement.scrollHeight,
+            D.body.offsetHeight, D.documentElement.offsetHeight,
+            D.body.clientHeight, D.documentElement.clientHeight
+        );
+    }
     running = 0;
     function goto(n){
 
@@ -16,16 +23,17 @@ head.ready(function() {
             $(".section"+n).addClass('is-active').css({'opacity':0}).animate({
                 opacity: 1
               }, 1000, function() {
-                // Animation complete.
-                $(this).addClass('a');
-                $('.section.was-active').removeClass('was-active');
-                
-                setTimeout(function(){running = 0;},1000);
-                if(n==5){
+                    // Animation complete.
+                    $(this).addClass('a');
+                    $('.section.was-active').removeClass('was-active');
+                    
+                    setTimeout(function(){running = 0;},1000);
+                    if(n==5){
                        if($('.tab-cont.is-shown').length){}else{
                         $(".js-tab1").addClass('is-shown');
                         }
-                }
+                    }
+                    $("html, body").animate({ scrollTop: 0 }, "fast");
               });
 
         }
@@ -41,11 +49,11 @@ head.ready(function() {
     }
 
     $(window).scroll(function() {
-       if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       if($(window).scrollTop() + $(window).height() == getDocHeight()) {
            next();
        }
        if($(window).scrollTop()==0){
-            prev()
+            prev();
        }
     });
     //goto(1);
