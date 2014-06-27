@@ -31,7 +31,9 @@ head.ready(function() {
         if(ttop>s4-sp){$('.section4').addClass('a');}
         if(ttop>s5-sp){
             $('.section5').addClass('a');
-            $(".js-tab1").addClass('is-shown')
+            if($('.tab-cont.is-shown').length){}else{
+                $(".js-tab1").addClass('is-shown');
+            }
         }
         if(ttop>s6-sp){$('.section6').addClass('a');}
         if(ttop>s7-sp){$('.section7').addClass('a');}
