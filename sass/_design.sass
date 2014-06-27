@@ -88,24 +88,48 @@
 		bottom: 0
 		font-size: 14px
 		color: #3e3e3e
+		z-index: 5 
+		//display: none
+		opacity: 0
+		+transition(all .3s linear)
+		&.is-shown
+			//display: block !important
+			opacity: 1 
+			z-index: 10 
 		strong
 			color: #b3d60d
 		.design__text-top, .design__text-bottom 
 			position: absolute
 			width: 400px
+		.tab__wrap
+			position: relative
 		&.tab-cont_1
-			background: url(../img/bg-tab-1.png) no-repeat 0 0
+
+			//height: 923px 
+
+			.tab1pic
+				width: 948px 
+				height: 923px 
+				position: absolute
+				top: 0 
+				left: 0 
+				background: url(../img/bg-tab-1.png) no-repeat 0 0
+				opacity: 0
+				+transition(all .4s linear .1s) 
 			.design__circle
 				position: absolute
 				right: 175px
-				bottom: 50px
+				bottom: 200px
 				padding: 46px 24px
 				height: 330px
 				width: 330px
 				text-align: center
 				background: #b3d60d
+				z-index: 20 
 				+border-radius(50%)
 				+box
+				opacity: 0 
+				+transition(all .4s linear .5s) 
 			.design__icon
 				display: inline-block
 				+s(design-circle-ico)
@@ -115,8 +139,23 @@
 				font-size: 24px
 				font-weight: normal
 				color: #fff
+			&.is-shown
+				opacity: 1 
+				.design__circle,.tab1pic
+					opacity: 1 
 		&.tab-cont_2
-			background: url(../img/tab-bg-2.png) no-repeat 45px 0
+			//background: url(../img/tab-bg-2.png) no-repeat 45px 0
+			height: 761px 
+			
+
+			 
+			.tab2pic
+				background: url(../img/tab-bg-2.png) no-repeat 0px 0
+				position: absolute
+				left: 45px 
+				top: 0
+				width: 910px  
+				height: 666px  
 			.design__text-top
 				left: 553px
 				&.design__text-top_1
@@ -131,8 +170,20 @@
 					top: 471px
 				&.design__text-bottom_2
 					top: 545px
+			&.is-shown
+				opacity: 1
+				 
 		&.tab-cont_3
-			background: url(../img/tab-bg-3.png) no-repeat 155px 0
+			
+			height: 761px 
+	
+			.tab3pic
+				background: url(../img/tab-bg-3.png) no-repeat 0px 0
+				position: absolute
+				left: 155px 
+				top: 0
+				width: 422px  
+				height: 684px 
 			.design__text-top, .design__text-bottom 
 				width: 362px
 				&.design__text-top_1
@@ -157,7 +208,8 @@
 				.design__pic
 					display: inline-block
 					+s(tab3-pic)
-
+			&.is-shown
+				opacity: 1
 
 
 	//site-in
@@ -175,3 +227,5 @@
 			top: 50%
 			margin-top: -18px
 			+s(site-in-pic)
+	&.a
+

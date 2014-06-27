@@ -45,7 +45,7 @@ head.ready(function() {
         goto(2);
     });
     // parallax on main
-    $('.section').mousemove(function(e){
+    $('.section111').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
         var x = -(e.pageX + this.offsetLeft) / 20;
@@ -67,16 +67,16 @@ head.ready(function() {
        $(".js-tab").each(function(){
          var tab_link = $(this).find("a");
          var tab_item = $(this).find("li");
-         var tab_cont = $(this).parents(".js-tab-group").find(".js-tab-cont");
-         tab_cont.hide();
+         var tab_cont = $(this).parents(".js-tab-group").children('.tab__wrap').find(".js-tab-cont");
+         //tab_cont.hide();
          tab_item.first().addClass("is-active");
-         $(this).parents(".js-tab-group").find(".js-tab1").show();
+         $(this).parents(".js-tab-group").children('.tab__wrap').find(".js-tab1").addClass('is-shown');
          tab_link.on("click", function() {
              var index = $(this).attr("href");
              tab_item.removeClass("is-active");
              $(this).parent().addClass("is-active");
-             tab_cont.hide();
-             $(this).parents(".js-tab-group").find("."+index).show();
+             tab_cont.removeClass('is-shown');
+             $(this).parents(".js-tab-group").children('.tab__wrap').find("."+index).addClass('is-shown');
              return false;
           });
        });
