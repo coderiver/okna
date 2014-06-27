@@ -79,7 +79,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .gobottom span { display: block; margin-top: 19px; text-align: center; font-family: bereg, sans-serif; font-size: 14px; color: #b4d611; }
 
 .home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; background-size: cover; }
-.home .home__wraplines { height: 550px; top: 320px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
+.home .home__wraplines { height: 550px; top: 280px; top: 220px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
 .home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 550px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.8s; -moz-transition: opacity 1s linear 0.8s; -o-transition: opacity 1s linear 0.8s; transition: opacity 1s linear 0.8s; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
 .home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.4s; -moz-transition: opacity 1s linear 0.4s; -o-transition: opacity 1s linear 0.4s; transition: opacity 1s linear 0.4s; }

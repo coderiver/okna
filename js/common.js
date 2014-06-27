@@ -45,11 +45,12 @@ head.ready(function() {
         goto(2);
     });
     // parallax on main
-    $('.section123').mousemove(function(e){
+    $('.section').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
-        var x = -(e.pageX + this.offsetLeft) / 5;
+        var x = -(e.pageX + this.offsetLeft) / 20;
         var y = -(e.pageY + this.offsetTop) / 5;
+        y = 0;
         $('.home__blue').css({'margin-top':y + 'px','margin-left': x + 'px'});
         $('.home__green').css({'margin-top':y/2 + 'px','margin-left': x/2 + 'px'});
     });
