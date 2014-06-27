@@ -47,8 +47,6 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .nav.nav_contrast li.is-gone:before { background: url('../img/icons-sc6aebcf814.png') 0 -2621px no-repeat; width: 2px; height: 14px; }
 .nav.nav_black span { color: #363636; }
 
-body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
-
 .running { overflow: hidden; }
 
 ::-webkit-scrollbar { display: none; }
