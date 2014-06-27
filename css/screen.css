@@ -49,8 +49,6 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 
 body { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
-.running { overflow: hidden; }
-
 .in { width: 960px; margin: 0 auto; position: relative; }
 
 .in { height: 100%; }
