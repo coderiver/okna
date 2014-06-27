@@ -119,7 +119,7 @@ head.ready(function() {
         //y = 0;
         $('.home__blue').css({'margin-left': x + 'px'});
         $('.home__green').css({'margin-left': x/2 + 'px'});
-        $('.parallaxpic').css({'margin-top':y/2 + 'px'});
+        $('.parallaxpic').css({'margin-top':y/4 + 'px'});
     });
 
 
