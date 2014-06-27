@@ -61,7 +61,16 @@ head.ready(function() {
     });
 
 
-   //2
+   //2 video
+   $('.js-video').click(function(event) {
+       $(".overlay").fadeIn(1000,function(){
+            $('.videopopup').fadeIn();
+       })
+       return false;
+   });
+   $('.overlay,.videopopup__close').click(function(event) {
+       $('.overlay,.videopopup').fadeOut();
+   });
 
 
     

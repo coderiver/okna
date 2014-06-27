@@ -148,7 +148,9 @@
 	bottom: 0
 	z-index: 1000
 	background: rgba(#000, .8)      
+	display: none
 .popup
+	display: none
 	position: fixed
 	top: 50%
 	left: 50%
@@ -216,4 +218,23 @@
 				display: inline-block
 				margin-left: 19px 
 				+s(arr)
+.videopopup
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	background: #fff
+	border: 16px solid #B4D42E    
+	width: 560px 
+	margin-left: -280px 
+	margin-top: -160px 
+	z-index: 2000 
+	height: 315px 
+	.videopopup__close
+		position: absolute
+		top: -76px 
+		right: -16px
+		cursor: pointer
+		+s(close1) 
+
 				

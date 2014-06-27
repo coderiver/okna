@@ -328,9 +328,9 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .gallery .gallery__item div i { position: absolute; top: 50%; left: 50%; background: url('../img/icons-sc6aebcf814.png') 0 -767px no-repeat; width: 57px; height: 57px; margin-top: -30px; margin-left: -30px; }
 .gallery .gallery__item img { display: block; }
 
-.overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; background: rgba(0, 0, 0, 0.8); }
+.overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1000; background: rgba(0, 0, 0, 0.8); display: none; }
 
-.popup { position: fixed; top: 50%; left: 50%; background: white; border: 16px solid #b4d42e; width: 640px; margin-left: -320px; margin-top: -200px; z-index: 2000; }
+.popup { display: none; position: fixed; top: 50%; left: 50%; background: white; border: 16px solid #b4d42e; width: 640px; margin-left: -320px; margin-top: -200px; z-index: 2000; }
 .popup .popup__content { padding: 30px 45px; }
 .popup h2 { font-size: 32px; font-weight: normal; padding-bottom: 25px; text-align: center; border-bottom: 1px solid #e8e8e8; margin: 0; }
 .popup .popup__text { margin: 30px 0; text-align: center; font-size: 14px; color: dimgrey; }
@@ -346,3 +346,6 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .popup .popup__submit { text-align: center; }
 .popup .popup__submit a { font-family: bebold, sans-serif; font-size: 16px; text-transform: uppercase; color: white; display: inline-block; padding: 0 30px; border: 3px solid rgba(255, 255, 255, 0.4); text-align: center; height: 45px; line-height: 45px; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; background: #353535; color: #f3f3f3; border-color: #353535; }
 .popup .popup__submit a i { display: inline-block; margin-left: 19px; background: url('../img/icons-sc6aebcf814.png') 0 -2483px no-repeat; width: 7px; height: 12px; }
+
+.videopopup { display: none; position: fixed; top: 50%; left: 50%; background: white; border: 16px solid #b4d42e; width: 560px; margin-left: -280px; margin-top: -160px; z-index: 2000; height: 315px; }
+.videopopup .videopopup__close { position: absolute; top: -76px; right: -16px; cursor: pointer; background: url('../img/icons-sc6aebcf814.png') 0 -2307px no-repeat; width: 30px; height: 30px; }
