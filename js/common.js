@@ -73,7 +73,7 @@ head.ready(function() {
                
                
                
-                console.log(curr1);
+            console.log(curr1);
            }
            if(!$('body').hasClass('running')){
                      if(curr!=curr1){
@@ -103,14 +103,15 @@ head.ready(function() {
         goto(2);
     });
     // parallax on main
-    $('.section111').mousemove(function(e){
+    $('.section1').mousemove(function(e){
         var amountMovedX = (e.pageX * -1 / 6);
         var amountMovedY = (e.pageY * -1 / 6);
         var x = -(e.pageX + this.offsetLeft) / 20;
         var y = -(e.pageY + this.offsetTop) / 5;
-        y = 0;
-        $('.home__blue').css({'margin-top':y + 'px','margin-left': x + 'px'});
-        $('.home__green').css({'margin-top':y/2 + 'px','margin-left': x/2 + 'px'});
+        //y = 0;
+        $('.home__blue').css({'margin-left': x + 'px'});
+        $('.home__green').css({'margin-left': x/2 + 'px'});
+        $('.parallaxpic').css({'margin-top':y/2 + 'px'});
     });
 
 
