@@ -270,7 +270,7 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 
 .site-in { position: absolute; top: 0; right: 0; }
 
-.site-in { padding: 24px 19px 17px 91px; color: #b3d60d; line-height: 1; font-size: 15px; text-decoration: none; background: #3a3a3b; display: inline-block; }
+.site-in { padding: 0px 19px 0px 91px; height: 56px; line-height: 56px; color: #b3d60d; font-size: 15px; text-decoration: none; background: #3a3a3b; display: inline-block; }
 .site-in .site-in__pic { position: absolute; left: 17px; top: 50%; margin-top: -18px; background: url('../img/icons-sc6aebcf814.png') 0 -1521px no-repeat; width: 56px; height: 36px; }
 
 @-moz-keyframes bubles { 0% { top: 275px; }
