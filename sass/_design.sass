@@ -115,7 +115,16 @@
 				left: 0 
 				background: url(../img/bg-tab-1.png) no-repeat 0 0
 				opacity: 0
-				+transition(all .4s linear .1s) 
+				+transition(all 0.7s linear 0.8s) 
+			.tab1picw
+				background: url(../img/window.png) no-repeat 0 0
+				width: 510px 
+				height: 413px 
+				opacity: 0
+				+transition(all 0.7s linear 0.3s) 
+				position: absolute
+				top: 0
+				right: 85px 
 			.design__circle
 				position: absolute
 				right: 175px
@@ -129,7 +138,7 @@
 				+border-radius(50%)
 				+box
 				opacity: 0 
-				+transition(all .4s linear .5s) 
+				+transition(all 0.3s linear 1s) 
 			.design__icon
 				display: inline-block
 				+s(design-circle-ico)
@@ -141,8 +150,9 @@
 				color: #fff
 			&.is-shown
 				opacity: 1 
-				.design__circle,.tab1pic
+				.design__circle,.tab1pic,.tab1picw
 					opacity: 1 
+				.design__circle
 		&.tab-cont_2
 			//background: url(../img/tab-bg-2.png) no-repeat 45px 0
 			height: 761px 
@@ -156,23 +166,34 @@
 				top: 0
 				width: 910px  
 				height: 666px  
+				+transition(all 0.7s linear 0.3s) 
 			.design__text-top
 				left: 553px
 				&.design__text-top_1
 					top: 42px
+					+transition(all 0.2s linear 0.6s) 
 				&.design__text-top_2
 					top: 114px
+					+transition(all 0.2s linear 0.8s)
 				&.design__text-top_3
 					top: 191px
+					+transition(all 0.2s linear 1s)
 			.design__text-bottom 
 				left: 99px
 				&.design__text-bottom_1
 					top: 471px
+					+transition(all 0.2s linear 1.2s)
 				&.design__text-bottom_2
 					top: 545px
+					+transition(all 0.2s linear 1.4s)
+			.design__text-top_1,.design__text-top_2,.design__text-top_3,.design__text-bottom_1,.design__text-bottom_2
+				opacity: 0 
 			&.is-shown
 				opacity: 1
-				 
+				.tab2pic
+					opacity: 1 
+				.design__text-top_1,.design__text-top_2,.design__text-top_3,.design__text-bottom_1,.design__text-bottom_2
+					opacity: 1 
 		&.tab-cont_3
 			
 			height: 761px 
@@ -189,18 +210,22 @@
 				&.design__text-top_1
 					top: 80px
 					left: 555px
+					+transition(all 0.2s linear 0.6s)
 				&.design__text-top_2
 					top: 195px
 					left: 584px
+					+transition(all 0.2s linear 0.8s)
 				&.design__text-top_3
 					top: 332px
 					left: 542px
+					+transition(all 0.2s linear 1s)
 			.design__block
 				position: absolute
 				top: 460px
 				left: 560px
 				bottom: 0
 				width: 355px
+				+transition(all 0.2s linear 1.3s)
 				h3
 					padding: 18px 0
 					font-size: 17px
@@ -208,8 +233,14 @@
 				.design__pic
 					display: inline-block
 					+s(tab3-pic)
+			.design__block,.design__text-top, .design__text-bottom 
+				opacity: 0 
 			&.is-shown
 				opacity: 1
+				.tab3pic
+					opacity: 1
+				.design__block,.design__text-top, .design__text-bottom 
+					opacity: 1 
 
 
 	//site-in

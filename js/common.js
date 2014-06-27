@@ -29,13 +29,16 @@ head.ready(function() {
         if(ttop>s2-sp){$('.section2').addClass('a');}
         if(ttop>s3-sp){$('.section3').addClass('a');}
         if(ttop>s4-sp){$('.section4').addClass('a');}
-        if(ttop>s5-sp){$('.section5').addClass('a');}
+        if(ttop>s5-sp){
+            $('.section5').addClass('a');
+            $(".js-tab1").addClass('is-shown')
+        }
         if(ttop>s6-sp){$('.section6').addClass('a');}
         if(ttop>s7-sp){$('.section7').addClass('a');}
 
-        $('.section').each(function(){
-            $(this)
-        })
+        // $('.section').each(function(){
+        //     $(this)
+        // })
     });
 
     // first slide, activate
@@ -70,7 +73,7 @@ head.ready(function() {
          var tab_cont = $(this).parents(".js-tab-group").children('.tab__wrap').find(".js-tab-cont");
          //tab_cont.hide();
          tab_item.first().addClass("is-active");
-         $(this).parents(".js-tab-group").children('.tab__wrap').find(".js-tab1").addClass('is-shown');
+         //$(this).parents(".js-tab-group").children('.tab__wrap').find(".js-tab1").addClass('is-shown');
          tab_link.on("click", function() {
              var index = $(this).attr("href");
              tab_item.removeClass("is-active");
