@@ -2,13 +2,18 @@ head.ready(function() {
     var agent = navigator.userAgent,
     event = (agent.match(/iPad/i)) ? "touchstart" : "click";
 
+
+
     // $(document).bind(event, function(e){
     //     $(".js-popup").hide();
     // });
     function goto(n){
+        $('body').addClass('running');
         $('html, body').animate({
-            scrollTop: $(".section"+n).offset().top
-        }, 1000);
+            scrollTop: $(".section"+n).offset().top + 2
+        }, 1000,function(){
+            $('body').removeClass('running');
+        });
     }
     $('.nav__ul a').click(function(event) {
         n = $(this).attr('href');
@@ -23,8 +28,12 @@ head.ready(function() {
     s6 = $(".section6").offset().top;
     s7 = $(".section7").offset().top;
     sp = 100;
+    var lastScrollTop = 0;
+    var curr = 1;
+    var curr1 = 1;
     $(window).scroll(function(event) {
         ttop = $(document).scrollTop();
+        h = $(window).height();
         //console.log(ttop);
         if(ttop>s2-sp){$('.section2').addClass('a');}
         if(ttop>s3-sp){$('.section3').addClass('a');}
@@ -38,9 +47,53 @@ head.ready(function() {
         if(ttop>s6-sp){$('.section6').addClass('a');}
         if(ttop>s7-sp){$('.section7').addClass('a');}
 
+
+        var st = $(this).scrollTop();
+        
+           if (st > lastScrollTop){
+               // downscroll code
+               //console.log('down');
+               if(ttop+h -20>s2){curr1 = 2}
+               if(ttop+h -20>s3){curr1 = 3}
+               if(ttop+h -20>s4){curr1 = 4}
+               if(ttop+h -20>s5){curr1 = 5}
+               if(ttop+h -20>s6){curr1 = 6}
+               if(ttop+h -20>s7){curr1 = 7}
+                console.log(curr1);
+           } else {
+              // upscroll code
+            if(ttop<s7){curr1 = 6}
+            if(ttop<s6){curr1 = 5}
+            if(ttop<s5){curr1 = 4}
+            if(ttop<s4){curr1 = 3}
+            if(ttop<s3){curr1 = 2}
+            if(ttop<s2){curr1 = 1}
+               
+               
+               
+               
+               
+                console.log(curr1);
+           }
+           if(!$('body').hasClass('running')){
+                     if(curr!=curr1){
+                        goto(curr1);
+                        console.log(curr1);
+                        curr = curr1;
+                   }
+           }
+          
+           
+           lastScrollTop = st;
+
+        // determin nomer slide po bottom
+
         // $('.section').each(function(){
         //     $(this)
         // })
+
+        //get nomer of current slide of bottom
+        
     });
 
     // first slide, activate
