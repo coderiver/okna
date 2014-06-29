@@ -47,15 +47,13 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .nav.nav_contrast li.is-gone:before { background: url('../img/icons-sc6aebcf814.png') 0 -2621px no-repeat; width: 2px; height: 14px; }
 .nav.nav_black span { color: #363636; }
 
-body { position: relative; overflow-y: scroll; }
-
-::-webkit-scrollbar { display: none; }
+body { position: relative; }
 
 .in { width: 960px; margin: 0 auto; position: relative; }
 
 .in { height: 100%; }
 
-.section { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; position: absolute; top: 0; left: 0; right: 0; min-width: 960px; display: none; }
+.section { height: 100%; background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; }
 .section.is-active, .section.was-active { z-index: 999; display: block; }
 .section.was-active { z-index: 998; }
 
@@ -301,8 +299,8 @@ body { position: relative; overflow-y: scroll; }
 .bubles div { width: 91px; height: 275px; position: absolute; top: 0; left: 0; background: url(../img/bubles.png) no-repeat 0 0; }
 .bubles .div1 { background-position: 0 100%; }
 
-.is-shown .bubles div { -webkit-animation: bubles 6s linear infinite both; -moz-animation: bubles 6s linear infinite both; -ms-animation: bubles 6s linear infinite both; -o-animation: bubles 6s linear infinite both; animation: bubles 6s linear infinite both; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
-.is-shown .bubles .div1 { -webkit-animation: bubles 6s linear infinite both; -moz-animation: bubles 6s linear infinite both; -ms-animation: bubles 6s linear infinite both; -o-animation: bubles 6s linear infinite both; animation: bubles 6s linear infinite both; -webkit-animation-delay: 4s; -moz-animation-delay: 4s; -ms-animation-delay: 4s; -o-animation-delay: 4s; animation-delay: 4s; background-position: 0 100%; }
+.is-shown .bubles div { -webkit-animation: bubles 12s linear infinite both; -moz-animation: bubles 12s linear infinite both; -ms-animation: bubles 12s linear infinite both; -o-animation: bubles 12s linear infinite both; animation: bubles 12s linear infinite both; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
+.is-shown .bubles .div1 { -webkit-animation: bubles 12s linear infinite both; -moz-animation: bubles 12s linear infinite both; -ms-animation: bubles 12s linear infinite both; -o-animation: bubles 12s linear infinite both; animation: bubles 12s linear infinite both; -webkit-animation-delay: 8s; -moz-animation-delay: 8s; -ms-animation-delay: 8s; -o-animation-delay: 8s; animation-delay: 8s; background-position: 0 100%; }
 
 .furn { height: 1016px; background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; }
 .furn .furn__head { position: absolute; top: 84px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1646px no-repeat; width: 282px; height: 149px; font-size: 26px; color: #f1f1f1; text-transform: uppercase; white-space: nowrap; line-height: 1.1; }

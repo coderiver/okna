@@ -147,6 +147,7 @@ head.ready(function() {
 
     // first slide, activate
     $('.section1').addClass('a');
+    $('.section').addClass('a');
     
     $('.gobottom').click(function(event) {
         goto(2);
