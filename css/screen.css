@@ -144,7 +144,7 @@ body { position: relative; }
 .descr.a .descr__about li { opacity: 1; }
 .descr.a .descr__edin { opacity: 1; }
 
-.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; -moz-background-size: none 100%; -webkit-background-size: none 100%; background-size: none 100%; }
+.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; }
 .tth .tth__right { position: absolute; top: 0; height: 100%; background: url(../img/tthr.jpg) no-repeat 0 0; width: 541px; height: 1015px; right: -500px; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.3s; -moz-transition: all 0.5s linear 0.3s; -o-transition: all 0.5s linear 0.3s; transition: all 0.5s linear 0.3s; }
 .tth .tth__left { position: absolute; top: 0; width: 415px; height: 1015px; left: -500px; background: url(../img/tthl.jpg) no-repeat 0 0; box-shadow: 30px 0 30px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.9s; -moz-transition: all 0.5s linear 0.9s; -o-transition: all 0.5s linear 0.9s; transition: all 0.5s linear 0.9s; opacity: 0; }
 .tth .tth__head { position: absolute; top: 100px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1944px no-repeat; width: 282px; height: 149px; font-size: 31px; color: #3a3a3a; text-transform: uppercase; line-height: 1; }
