@@ -19,22 +19,34 @@ head.ready(function() {
             console.log('goto'+n);
             running = 1;
             $('.section.is-active').removeClass('is-active').addClass('was-active');
-        
-            $(".section"+n).addClass('is-active').css({'opacity':0}).animate({
-                opacity: 1
-              }, 1000, function() {
-                    // Animation complete.
-                    $(this).addClass('a');
-                    $('.section.was-active').removeClass('was-active');
-                    
-                    setTimeout(function(){running = 0;},1000);
-                    if(n==5){
-                       if($('.tab-cont.is-shown').length){}else{
-                        $(".js-tab1").addClass('is-shown');
-                        }
+            $(".section"+n).addClass('is-active');
+             $('html, body').animate({
+                scrollTop: $(".section"+n).offset().top
+            }, 600,function(){
+                $(".section"+n).addClass('a');
+                setTimeout(function(){running = 0;},500);
+                if(n==5){
+                   if($('.tab-cont.is-shown').length){}else{
+                    $(".js-tab1").addClass('is-shown');
                     }
-                    $("html, body").animate({ scrollTop: 0 }, "fast");
-              });
+                }
+            });
+        
+            // $(".section"+n).addClass('is-active').css({'opacity':0}).animate({
+            //     opacity: 1
+            //   }, 1000, function() {
+            //         // Animation complete.
+            //         $(this).addClass('a');
+            //         $('.section.was-active').removeClass('was-active');
+                    
+            //         setTimeout(function(){running = 0;},1000);
+            //         if(n==5){
+            //            if($('.tab-cont.is-shown').length){}else{
+            //             $(".js-tab1").addClass('is-shown');
+            //             }
+            //         }
+            //         $("html, body").animate({ scrollTop: 0 }, "fast");
+            //   });
 
         }
         
@@ -63,16 +75,38 @@ head.ready(function() {
         goto(n);
         return false;
     });
-    s2 = $(".section2").offset().top;
-    s3 = $(".section3").offset().top;
-    s4 = $(".section4").offset().top;
-    s5 = $(".section5").offset().top;
-    s6 = $(".section6").offset().top;
-    s7 = $(".section7").offset().top;
-    sp = 100;
-    var lastScrollTop = 0;
-    var curr = 1;
-    var curr1 = 1;
+    // s2 = $(".section2").offset().top;
+    // s3 = $(".section3").offset().top;
+    // s4 = $(".section4").offset().top;
+    // s5 = $(".section5").offset().top;
+    // s6 = $(".section6").offset().top;
+    // s7 = $(".section7").offset().top;
+    // sp = 100;
+    // var lastScrollTop = 0;
+    // var curr = 1;
+    // var curr1 = 1;
+    var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
+    
+
+    $('body').bind(mousewheelevt, function(e){
+        
+        
+        
+
+            var evt = window.event || e //equalize event object     
+            evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+            var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+
+            if(delta > 0) {
+                prev();
+            }
+            else{
+                next();
+            }   
+            return false;
+        
+
+    });
     $(window).scroll(function(event) {
         // ttop = $(document).scrollTop();
         // h = $(window).height();
@@ -137,17 +171,10 @@ head.ready(function() {
         
     });
 
-    $(window).on('scroll',function(event) {
-        if($('body').hasClass('running')){
-            event.preventDefault();
-
-        }
-        
-    });
 
     // first slide, activate
     $('.section1').addClass('a');
-    $('.section').addClass('a');
+    //$('.section').addClass('a');
     
     $('.gobottom').click(function(event) {
         goto(2);
