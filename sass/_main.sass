@@ -34,7 +34,18 @@ body
 		display: block 
 	&.was-active
 		z-index: 998
-
+.section
+	-webkit-perspective: 1000px
+	perspective: 1000px
+	
+	.in
+		+transition(all .6s ease)
+		-webkit-transform: rotateX(60deg)
+		opacity: 0 
+	&.a
+		.in
+			-webkit-transform: rotateX(0deg)
+			opacity: 1 
 +keyframes(wave)
 	0%
 		top: 0px 

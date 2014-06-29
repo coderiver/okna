@@ -181,15 +181,21 @@ head.ready(function() {
     });
     // parallax on main
     $('.section1').mousemove(function(e){
-        var amountMovedX = (e.pageX * -1 / 6);
-        var amountMovedY = (e.pageY * -1 / 6);
         var x = -(e.pageX) / 20;
         var y = -(e.pageY) / 5;
         //y = 0;
         $('.home__blue').css({'margin-left': x + 'px'});
         $('.home__green').css({'margin-left': x/2 + 'px'});
+        //$('.parallaxpic').css({'margin-top':y/4 + 'px'});
+    });
+    
+
+    $('.home__window').mousemove(function(e){
+        var x = -(e.pageX) / 20;
+        var y = -(e.pageY) / 5;
         $('.parallaxpic').css({'margin-top':y/4 + 'px'});
     });
+
 
 
    //2 video
