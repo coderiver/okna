@@ -21,7 +21,7 @@ head.ready(function() {
             $('.section.is-active').removeClass('is-active').addClass('was-active');
             $(".section"+n).addClass('is-active').css({'opacity':0}).animate({
                 opacity: 1
-              }, 1000, function() {
+              }, 100, function() {
                 // Animation complete.
                 $('.section.a').removeClass('a');
                 $(this).addClass('a');
