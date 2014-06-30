@@ -27,7 +27,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size: 12px; line-height: 1.4; }
 
-.nav { position: absolute; top: 0; bottom: 0; height: 1px; left: 50%; margin-left: -480px; width: 1px; height: 100%; z-index: 100; font-family: bebold, sans-serif; }
+.nav { position: absolute; top: 0; bottom: 0; height: 1px; left: 50%; margin-left: -480px; width: 1px; height: 100%; z-index: 900; font-family: bebold, sans-serif; }
 .nav .nav__ul { position: absolute; top: 50%; margin-top: -130px; list-style: none; }
 .nav a { text-decoration: none; }
 .nav a:hover i { opacity: 1; }
@@ -47,13 +47,13 @@ body { font-family: Arial, sans-serif; font-family: bereg, sans-serif; font-size
 .nav.nav_contrast li.is-gone:before { background: url('../img/icons-sc6aebcf814.png') 0 -2621px no-repeat; width: 2px; height: 14px; }
 .nav.nav_black span { color: #363636; }
 
-body { position: relative; }
+body { position: relative; overflow: hidden; }
 
 .in { width: 960px; margin: 0 auto; position: relative; }
 
 .in { height: 100%; }
 
-.section { height: 100%; background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; }
+.section { height: 100%; background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; position: absolute; top: 0; left: 0; right: 0; min-width: 960px; display: none; }
 .section.is-active, .section.was-active { z-index: 999; display: block; }
 .section.was-active { z-index: 998; }
 
