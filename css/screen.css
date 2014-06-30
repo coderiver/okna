@@ -368,7 +368,7 @@ body { position: relative; }
 
 .gallery { width: 870px; height: 576px; position: relative; }
 .gallery .gallery__big { position: absolute; top: 0; left: 0; bottom: 0; right: 0; overflow: hidden; border: 14px solid #b4d42e; z-index: 200; display: none; }
-.gallery .gallery__big .gallery__close { background: url('../img/icons-sc6aebcf814.png') 0 -2433px no-repeat; width: 40px; height: 40px; position: absolute; top: 20px; right: 20px; cursor: pointer; }
+.gallery .gallery__big .gallery__close { background: url('../img/icons-sc6aebcf814.png') 0 -2307px no-repeat; width: 30px; height: 30px; position: absolute; top: 20px; right: 20px; cursor: pointer; }
 .gallery .gallery__big img { display: block; width: 100%; }
 .gallery .gallery__item { float: left; position: relative; }
 .gallery .gallery__item:hover div { opacity: 1; }
