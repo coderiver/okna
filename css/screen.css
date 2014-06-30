@@ -228,7 +228,6 @@ body { position: relative; }
 .help .help__popup { display: none; position: absolute; left: 45px; top: -23px; background: white; padding: 28px; line-height: 1.5; width: 300px; font-size: 14px; color: black; z-index: 200; text-align: left; color: #525050; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
 .help .help__popup:before { position: absolute; top: 23px; left: -12px; background: url('../img/icons-sc6aebcf814.png') 0 -2535px no-repeat; width: 12px; height: 25px; content: " "; }
 .help:hover, .help.is-open { background: white; border-color: white; color: black; }
-.help:hover .help__popup, .help.is-open .help__popup { display: block; }
 
 .design { height: 1016px; background: url(../img/bg5.jpg) no-repeat 50% 50%; background-size: cover; font-family: bereg, sans-serif; }
 .design .in { position: relative; }
