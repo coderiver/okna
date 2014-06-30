@@ -23,6 +23,7 @@ head.ready(function() {
                 opacity: 1
               }, 1000, function() {
                 // Animation complete.
+                $('.section.a').removeClass('a');
                 $(this).addClass('a');
                 $('.section.was-active').removeClass('was-active');
                 

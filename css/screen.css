@@ -53,12 +53,12 @@ body { position: relative; overflow: hidden; }
 
 .in { height: 100%; }
 
-.section { height: 100%; background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; position: absolute; top: 0; left: 0; right: 0; min-width: 960px; display: none; }
+.section { height: 100%; background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; position: relative; background-color: white !important; position: absolute; top: 0; left: 0; right: 0; min-width: 960px; display: none; z-index: 990; }
 .section.is-active, .section.was-active { z-index: 999; display: block; }
 .section.was-active { z-index: 998; }
 
 .section { -webkit-perspective: 1000px; perspective: 1000px; }
-.section .section__superin { -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; -webkit-transform: rotateX(60deg); opacity: 0; }
+.section .section__superin { -webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease; -webkit-transform: rotateX(60deg); opacity: 0; position: relative; z-index: 200; height: 100%; }
 .section.a .section__superin { -webkit-transform: rotateX(0deg); opacity: 1; }
 
 @-moz-keyframes wave { 0% { top: 0px; }
@@ -110,7 +110,8 @@ body { position: relative; overflow: hidden; }
 .home .home__top .home__toptext { font-size: 25px; color: #565555; text-align: right; white-space: nowrap; padding-right: 52px; padding-top: 33px; line-height: 32px; }
 .home .home__top .home__topsubtext { font-size: 16px; color: #a3c32f; position: absolute; bottom: -0.5em; right: 22px; width: 180px; text-align: center; }
 
-.descr { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; background-size: cover; }
+.descr { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; background-size: cover; background: none; }
+.descr .section__superin { background: url(../img/bg2.jpg) no-repeat 50% 50%; height: 1000px; }
 .descr .descr__top { margin-top: 100px; background: url('../img/icons-sc6aebcf814.png') 0 -1316px no-repeat; width: 317px; height: 195px; position: relative; white-space: nowrap; color: #e8e7e7; font-family: bereg, sans-serif; font-size: 24px; text-align: right; line-height: 1; }
 .descr .descr__top h2 { font-size: 48px; font-weight: normal; margin-bottom: 20px; }
 .descr .descr__top .descr__topwrap { position: absolute; top: 55px; right: 42px; }
@@ -145,7 +146,8 @@ body { position: relative; overflow: hidden; }
 .descr.a .descr__about li { opacity: 1; }
 .descr.a .descr__edin { opacity: 1; }
 
-.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; }
+.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; background: none; }
+.tth .section__superin { background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; }
 .tth .tth__right { position: absolute; top: 0; height: 100%; background: url(../img/tthr.jpg) no-repeat 0 0; width: 541px; height: 1015px; right: -500px; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.3s; -moz-transition: all 0.5s linear 0.3s; -o-transition: all 0.5s linear 0.3s; transition: all 0.5s linear 0.3s; }
 .tth .tth__left { position: absolute; top: 0; width: 415px; height: 1015px; left: -500px; background: url(../img/tthl.jpg) no-repeat 0 0; box-shadow: 30px 0 30px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.9s; -moz-transition: all 0.5s linear 0.9s; -o-transition: all 0.5s linear 0.9s; transition: all 0.5s linear 0.9s; opacity: 0; }
 .tth .tth__head { position: absolute; top: 100px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1944px no-repeat; width: 282px; height: 149px; font-size: 31px; color: #3a3a3a; text-transform: uppercase; line-height: 1; }
@@ -184,7 +186,8 @@ body { position: relative; overflow: hidden; }
 .tth.a .tth__list { opacity: 1; }
 .tth.a .tth__list li { opacity: 1; }
 
-.special { height: 1240px; background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; }
+.special { height: 1240px; background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; background: none; }
+.special .section__superin { background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; }
 
 .special__head { position: absolute; top: 94px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -2158px no-repeat; width: 258px; height: 139px; font-size: 30px; color: #f6f6f6; white-space: nowrap; line-height: 1.35; z-index: 21; }
 .special__head .special__headwrap { padding: 36px 0 0 40px; }
@@ -230,7 +233,8 @@ body { position: relative; overflow: hidden; }
 .help .help__popup:before { position: absolute; top: 23px; left: -12px; background: url('../img/icons-sc6aebcf814.png') 0 -2535px no-repeat; width: 12px; height: 25px; content: " "; }
 .help:hover, .help.is-open { background: white; border-color: white; color: black; }
 
-.design { height: 1016px; background: url(../img/bg5.jpg) no-repeat 50% 50%; background-size: cover; font-family: bereg, sans-serif; }
+.design { height: 1016px; background: url(../img/bg5.jpg) no-repeat 50% 50%; background-size: cover; background: none; font-family: bereg, sans-serif; }
+.design .section__superin { background: url(../img/bg5.jpg) no-repeat 50% 50%; background-size: cover; }
 .design .in { position: relative; }
 .design .design__head { position: absolute; top: 84px; right: 0; height: 148px; width: 295px; }
 .design .design__head .design__headwrap { position: relative; padding: 45px 40px 0 0; font-size: 32px; line-height: 1.1; text-transform: uppercase; }
@@ -320,7 +324,8 @@ body { position: relative; overflow: hidden; }
 .is-shown .bubles div { -webkit-animation: bubles 12s linear infinite both; -moz-animation: bubles 12s linear infinite both; -ms-animation: bubles 12s linear infinite both; -o-animation: bubles 12s linear infinite both; animation: bubles 12s linear infinite both; -webkit-animation-delay: 2s; -moz-animation-delay: 2s; -ms-animation-delay: 2s; -o-animation-delay: 2s; animation-delay: 2s; }
 .is-shown .bubles .div1 { -webkit-animation: bubles 12s linear infinite both; -moz-animation: bubles 12s linear infinite both; -ms-animation: bubles 12s linear infinite both; -o-animation: bubles 12s linear infinite both; animation: bubles 12s linear infinite both; -webkit-animation-delay: 8s; -moz-animation-delay: 8s; -ms-animation-delay: 8s; -o-animation-delay: 8s; animation-delay: 8s; background-position: 0 100%; }
 
-.furn { height: 1016px; background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; }
+.furn { height: 1016px; background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; background: none; }
+.furn .section__superin { background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; }
 .furn .furn__head { position: absolute; top: 84px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1646px no-repeat; width: 282px; height: 149px; font-size: 26px; color: #f1f1f1; text-transform: uppercase; white-space: nowrap; line-height: 1.1; }
 .furn .furn__head .furn__headwrap { padding: 45px 0 0 42px; }
 .furn .furn__head span { display: block; font-size: 30px; color: #b4d42e; }
@@ -346,7 +351,8 @@ body { position: relative; overflow: hidden; }
 .furn.a .furn__text { opacity: 1; }
 .furn.a .furn__pic, .furn.a .furn__slide, .furn.a .furn__bigpic, .furn.a .furn__title, .furn.a .furn__sw { opacity: 1; }
 
-.footer { height: 1244px; background: url(../img/bg7.jpg) no-repeat 50% 50%; background-size: cover; }
+.footer { height: 1244px; background: url(../img/bg7.jpg) no-repeat 50% 50%; background-size: cover; background: none; }
+.footer .section__superin { background: url(../img/bg7.jpg) no-repeat 50% 50%; background-size: cover; }
 .footer .footer__head { position: absolute; top: 111px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -877px no-repeat; width: 387px; height: 228px; font-size: 48px; color: white; }
 .footer .footer__head .footer__headwrap { padding: 52px 0 0 63px; white-space: nowrap; }
 .footer .footer__head span { display: block; font-size: 24px; color: #e8e7e7; }

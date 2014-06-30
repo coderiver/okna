@@ -22,13 +22,14 @@ body
 	background-size: cover
 	overflow: hidden
 	position: relative
-	
+	background-color: #fff !important 
 	position: absolute
 	top: 0
 	left: 0
 	right: 0
 	min-width: 960px    
 	display: none
+	z-index: 990 
 	&.is-active,&.was-active
 		z-index: 999
 		display: block 
@@ -42,6 +43,9 @@ body
 		+transition(all .6s ease)
 		-webkit-transform: rotateX(60deg)
 		opacity: 0 
+		position: relative
+		z-index: 200 
+		height: 100% 
 	&.a
 		.section__superin
 			-webkit-transform: rotateX(0deg)
@@ -214,6 +218,10 @@ body
 	background: url(../img/bg2.jpg) no-repeat 50% 50%
 	height: 1000px 
 	background-size: cover
+	background: none
+	.section__superin
+		background: url(../img/bg2.jpg) no-repeat 50% 50%
+		height: 1000px 
 	.descr__top
 		margin-top: 100px 
 		+s(border)
