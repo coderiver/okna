@@ -162,19 +162,22 @@ body { position: relative; overflow: hidden; }
 .descr.a .descr__about li { opacity: 1; }
 .descr.a .descr__edin { opacity: 1; }
 
-.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; background: none; }
+.tth { height: 1015px; background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; background: none; height: 100%; }
 .tth .section__superin { background: #fafafa url(../img/bg3.jpg) no-repeat 0% -40%; background-size: cover; }
 .tth .tth__right { position: absolute; top: 0; height: 100%; background: url(../img/tthr.jpg) no-repeat 0 0; width: 541px; height: 1015px; right: -500px; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.3s; -moz-transition: all 0.5s linear 0.3s; -o-transition: all 0.5s linear 0.3s; transition: all 0.5s linear 0.3s; }
 .tth .tth__left { position: absolute; top: 0; width: 415px; height: 1015px; left: -500px; background: url(../img/tthl.jpg) no-repeat 0 0; box-shadow: 30px 0 30px 0px rgba(0, 0, 0, 0.2); -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.9s; -moz-transition: all 0.5s linear 0.9s; -o-transition: all 0.5s linear 0.9s; transition: all 0.5s linear 0.9s; opacity: 0; }
 .tth .tth__head { position: absolute; top: 100px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1944px no-repeat; width: 282px; height: 149px; font-size: 31px; color: #3a3a3a; text-transform: uppercase; line-height: 1; }
+@media only screen and (max-height: 920px) { .tth .tth__head { top: 0; } }
 .tth .tth__head .tth__headwrap { padding: 40px 0 0 43px; white-space: nowrap; }
 .tth .tth__head span { display: block; text-transform: none; font-size: 38px; color: #3a3a3a; }
 .tth .tth__head span em { font-style: normal; color: #b4d42e; }
 .tth .tth__info { width: 345px; text-align: center; top: 350px; left: 92px; position: absolute; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 1.5s; -moz-transition: all 0.5s linear 1.5s; -o-transition: all 0.5s linear 1.5s; transition: all 0.5s linear 1.5s; }
+@media only screen and (max-height: 920px) { .tth .tth__info { top: 173px; } }
 .tth .tth__info .tth__pic { width: 345px; height: 345px; border-radius: 345px; margin-bottom: 27px; background: url("../img/tthpic.png") no-repeat 0 0; display: block; }
 .tth .tth__info h3 { font-size: 24px; font-weight: normal; color: #3a3a3a; margin-bottom: 30px; }
 .tth .tth__info p { font-size: 14px; color: #3a3a3a; }
 .tth .tth__list { top: 182px; left: 480px; position: absolute; width: 370px; list-style: none; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 1.8s; -moz-transition: all 0.5s linear 1.8s; -o-transition: all 0.5s linear 1.8s; transition: all 0.5s linear 1.8s; }
+@media only screen and (max-height: 920px) { .tth .tth__list { top: 0; } }
 .tth .tth__list li { margin-bottom: 45px; opacity: 0; -webkit-transition: all 0.3s linear; -webkit-transition-delay: 2s; -moz-transition: all 0.3s linear 2s; -o-transition: all 0.3s linear 2s; transition: all 0.3s linear 2s; }
 .tth .tth__list li + li { -webkit-transition-delay: 2.4s; -moz-transition-delay: 2.4s; -o-transition-delay: 2.4s; transition-delay: 2.4s; }
 .tth .tth__list li + li + li { -webkit-transition-delay: 2.6s; -moz-transition-delay: 2.6s; -o-transition-delay: 2.6s; transition-delay: 2.6s; }
