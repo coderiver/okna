@@ -357,21 +357,28 @@ body { position: relative; overflow: hidden; }
 .furn { height: 1016px; background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; background: none; }
 .furn .section__superin { background: url(../img/bg6.jpg) no-repeat 50% 50%; background-size: cover; }
 .furn .furn__head { position: absolute; top: 84px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -1646px no-repeat; width: 282px; height: 149px; font-size: 26px; color: #f1f1f1; text-transform: uppercase; white-space: nowrap; line-height: 1.1; }
+@media only screen and (max-height: 920px) { .furn .furn__head { top: 0; } }
 .furn .furn__head .furn__headwrap { padding: 45px 0 0 42px; }
 .furn .furn__head span { display: block; font-size: 30px; color: #b4d42e; }
 .furn .furn__text { position: absolute; width: 550px; right: 0; top: 110px; text-align: right; font-size: 14px; color: white; line-height: 1.4; opacity: 0; -webkit-transition: all 0.4s linear; -webkit-transition-delay: 1.4s; -moz-transition: all 0.4s linear 1.4s; -o-transition: all 0.4s linear 1.4s; transition: all 0.4s linear 1.4s; }
+@media only screen and (max-height: 920px) { .furn .furn__text { top: 15px; } }
 .furn .furn__text strong, .furn .furn__text a { font-weight: normal; text-decoration: none; font-family: bebold, sans-serif; color: #b4d42e; }
 .furn .furn__bigpic { position: absolute; bottom: 0; left: -20px; text-align: center; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 0.3s; -moz-transition: all 0.5s linear 0.3s; -o-transition: all 0.5s linear 0.3s; transition: all 0.5s linear 0.3s; }
+@media only screen and (max-height: 920px) { .furn .furn__bigpic { bottom: auto; top: 664px; } }
 .furn .furn__bigpic img { display: block; }
 .furn .furn__title { position: absolute; left: 480px; top: 285px; font-size: 24px; font-weight: normal; color: white; }
+@media only screen and (max-height: 920px) { .furn .furn__title { top: 185px; } }
 .furn .furn__title h2 { font-weight: normal; font-size: 24px; display: inline-block; border-bottom: 6px solid #b4d42e; padding-bottom: 16px; line-height: 1.2; }
 .furn .furn__title h2 span { display: block; color: #b4d42e; }
 .furn .furn__pic { width: 384px; height: 384px; border-radius: 384px; position: absolute; left: 92px; top: 325px; z-index: 30; display: none; }
+@media only screen and (max-height: 920px) { .furn .furn__pic { top: 200px; } }
 .furn .furn__pic#furn1p { background: url(../img/pic.jpg) no-repeat 0 0; display: block; }
 .furn .furn__slide { position: absolute; right: 0; width: 480px; text-align: right; font-size: 14px; color: white; top: 520px; }
+@media only screen and (max-height: 920px) { .furn .furn__slide { top: 427px; } }
 .furn .furn__slide strong, .furn .furn__slide a { color: #b4d42e; text-decoration: none; font-weight: normal; }
 .furn .furn__slide h3 { font-size: 18px; margin-bottom: 13px; font-weight: normal; }
 .furn .furn__sw { position: absolute; top: 410px; right: 0; width: 480px; text-align: right; list-style: none; font-size: 0; }
+@media only screen and (max-height: 920px) { .furn .furn__sw { top: 311px; } }
 .furn .furn__sw li { display: inline-block; }
 .furn .furn__sw a { display: inline-block; height: 39px; width: 39px; text-align: center; line-height: 39px; border-radius: 40px; border: 4px solid rgba(255, 255, 255, 0.4); color: white; text-decoration: none; font-size: 15px; margin-right: 14px; }
 .furn .furn__sw a:hover { border-color: white; }
