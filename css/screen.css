@@ -87,7 +87,7 @@ body { position: relative; overflow: hidden; }
   100% { top: 0px; } }
 
 .gobottom { position: absolute; bottom: 50px; left: 50%; width: 300px; text-align: center; margin-left: -150px; cursor: pointer; }
-@media only screen and (max-height: 700px) { .gobottom { z-index: 300; bottom: 10px; } }
+@media only screen and (max-height: 700px) { .gobottom { z-index: 300; bottom: 0px; } }
 .gobottom .gobottom__icon { background: url('../img/icons-sc6aebcf814.png') 0 -2570px no-repeat; width: 3px; height: 17px; display: inline-block; }
 .gobottom .gobottom__icon1 { background: url('../img/icons-sc6aebcf814.png') 0 -1115px no-repeat; width: 28px; height: 44px; display: inline-block; position: relative; -webkit-animation: wave 4s linear infinite both; -moz-animation: wave 4s linear infinite both; -ms-animation: wave 4s linear infinite both; -o-animation: wave 4s linear infinite both; animation: wave 4s linear infinite both; }
 .gobottom span { display: block; margin-top: 19px; text-align: center; font-family: bereg, sans-serif; font-size: 14px; color: #b4d611; }
