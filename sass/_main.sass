@@ -68,6 +68,9 @@ body
 	text-align: center
 	margin-left: -150px 
 	cursor: pointer
+	+h
+		z-index: 300 
+		bottom: 10px 
 	.gobottom__icon
 		+s(gobottom)
 		display: inline-block
@@ -83,12 +86,14 @@ body
 		+reg
 		font-size: 14px
 		color: #B4D611 
+		+h
+			display: none
 
 .home
 	background: url(../img/bg1.jpg) no-repeat 50% 50%
 	height: 1042px 
 	overflow: hidden
-	
+	height: 100% 
 	background: none 
 	.section__superin
 		position: absolute
@@ -103,8 +108,9 @@ body
 		z-index: 200 
 	.home__wraplines
 		height: 550px 
-		top: 280px 
-		top: 220px 
+		top: 50%
+		margin-top: -290px  
+		//top: 220px 
 		width: 1920px
 		//width: 2200px 
 		left: 50% 
@@ -141,7 +147,11 @@ body
 		left: 50%
 		margin-left: -303px 
 		top: 194px 
+		top: 50%
+		margin-top: -300px  
 		z-index: 220 
+		+h
+			+transform(scale(0.7))
 		img
 			position: relative
 			z-index: 222 
@@ -177,11 +187,11 @@ body
 		opacity: 0
 		+transition(all .9s linear) 
 		+transition-delay(1.4s)
-		+transform(scale(1))
+		//+transform(scale(1))
 	&.a
 		.home__window,.home__shadow
 			opacity: 1 
-			+transform(scale(1))
+			//+transform(scale(1))
 		
 	.home__logo
 		position: absolute

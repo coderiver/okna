@@ -87,24 +87,27 @@ body { position: relative; overflow: hidden; }
   100% { top: 0px; } }
 
 .gobottom { position: absolute; bottom: 50px; left: 50%; width: 300px; text-align: center; margin-left: -150px; cursor: pointer; }
+@media only screen and (max-height: 700px) { .gobottom { z-index: 300; bottom: 10px; } }
 .gobottom .gobottom__icon { background: url('../img/icons-sc6aebcf814.png') 0 -2570px no-repeat; width: 3px; height: 17px; display: inline-block; }
 .gobottom .gobottom__icon1 { background: url('../img/icons-sc6aebcf814.png') 0 -1115px no-repeat; width: 28px; height: 44px; display: inline-block; position: relative; -webkit-animation: wave 4s linear infinite both; -moz-animation: wave 4s linear infinite both; -ms-animation: wave 4s linear infinite both; -o-animation: wave 4s linear infinite both; animation: wave 4s linear infinite both; }
 .gobottom span { display: block; margin-top: 19px; text-align: center; font-family: bereg, sans-serif; font-size: 14px; color: #b4d611; }
+@media only screen and (max-height: 700px) { .gobottom span { display: none; } }
 
-.home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; background: none; }
+.home { background: url(../img/bg1.jpg) no-repeat 50% 50%; height: 1042px; overflow: hidden; height: 100%; background: none; }
 .home .section__superin { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/bg1.jpg) no-repeat 50% 50%; background-size: cover; }
 .home .in { position: relative; z-index: 200; }
-.home .home__wraplines { height: 550px; top: 280px; top: 220px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
+.home .home__wraplines { height: 550px; top: 50%; margin-top: -290px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
 .home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 750px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
 .home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.3s; -moz-transition: opacity 1s linear 0.3s; -o-transition: opacity 1s linear 0.3s; transition: opacity 1s linear 0.3s; }
-.home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; z-index: 220; }
+.home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; top: 50%; margin-top: -300px; z-index: 220; }
+@media only screen and (max-height: 700px) { .home .home__window { -moz-transform: scale(0.7); -o-transform: scale(0.7); -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); } }
 .home .home__window img { position: relative; z-index: 222; }
 .home .home__window .parallax { width: 530px; height: 591px; left: 43px; top: 48px; position: absolute; z-index: 221; overflow: hidden; }
 .home .home__window .parallax div { width: 1024px; height: 768px; width: 602px; height: 656px; top: 0; left: 0; position: absolute; background: url("../img/view.png") no-repeat 0 0; }
 .home .home__shadow { position: absolute; top: 50%; left: 50%; width: 1000px; height: 760px; margin-top: -380px; margin-left: -500px; background: url("../img/homeshadow.png"); z-index: 8; }
-.home .home__window, .home .home__shadow { opacity: 0; -webkit-transition: all 0.9s linear; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; transition: all 0.9s linear; -webkit-transition-delay: 1.4s; -moz-transition-delay: 1.4s; -o-transition-delay: 1.4s; transition-delay: 1.4s; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
-.home.a .home__window, .home.a .home__shadow { opacity: 1; -webkit-transform: scale(1); -moz-transform: scale(1); -ms-transform: scale(1); -o-transform: scale(1); transform: scale(1); }
+.home .home__window, .home .home__shadow { opacity: 0; -webkit-transition: all 0.9s linear; -moz-transition: all 0.9s linear; -o-transition: all 0.9s linear; transition: all 0.9s linear; -webkit-transition-delay: 1.4s; -moz-transition-delay: 1.4s; -o-transition-delay: 1.4s; transition-delay: 1.4s; }
+.home.a .home__window, .home.a .home__shadow { opacity: 1; }
 .home .home__logo { position: absolute; top: 100px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -582px no-repeat; width: 245px; height: 68px; font: 0/0 a; text-shadow: none; color: transparent; z-index: 1000; cursor: pointer; }
 .home .home__top { position: absolute; top: 72px; right: 0; background: url('../img/icons-sc6aebcf814.png') 0 -1805px no-repeat; width: 328px; height: 129px; font-family: bereg, sans-serif; z-index: 120; }
 .home .home__top .home__toptext { font-size: 25px; color: #565555; text-align: right; white-space: nowrap; padding-right: 52px; padding-top: 33px; line-height: 32px; }

@@ -71,6 +71,9 @@ $w320: 320px
 		@media only screen and (min-width: $min1920)
 			@content
 
+=h()
+	@media only screen and (max-height: 700px)
+		@content
 =fs($sizeValue: 16)
 	font-size: $sizeValue + px
 	font-size: $sizeValue / 10 + rem
@@ -137,7 +140,12 @@ $w320: 320px
 	-webkit-transition: $what
 	-ms-transition: $what
 	transition: $what
-
+=transform($what)
+	-moz-transform: $what
+	-o-transform: $what
+	-webkit-transform: $what
+	-ms-transform: $what
+	transform: $what
 =tr($what)
 	+transition($what)
 
