@@ -129,7 +129,7 @@ body { position: relative; overflow: hidden; }
 .descr .descr__edin p { margin-bottom: 22px; }
 .descr .descr__edin p a { color: #b4d42e; text-decoration: none; }
 .descr .descr__about { float: left; clear: both; margin-left: 92px; padding-top: 81px; font-family: bereg, sans-serif; opacity: 0; z-index: 20; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 1.4s; -moz-transition: all 0.5s linear 1.4s; -o-transition: all 0.5s linear 1.4s; transition: all 0.5s linear 1.4s; }
-@media only screen and (max-height: 920px) { .descr .descr__about { bottom: 0; padding-top: 0; margin: 0; position: absolute; left: 92px; } }
+@media only screen and (max-height: 920px) { .descr .descr__about { bottom: 0; padding-top: 0; margin: 0; position: absolute; left: 92px; top: 434px; } }
 .descr .descr__about h3 { font-size: 24px; font-weight: normal; color: white; margin-bottom: 29px; }
 @media only screen and (max-height: 920px) { .descr .descr__about h3 { margin-bottom: 18px; } }
 .descr .descr__about h3 a { color: #b4d42e; text-decoration: none; display: inline-block; position: relative; }
