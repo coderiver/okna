@@ -205,36 +205,46 @@ body { position: relative; overflow: hidden; }
 .tth.a .tth__list { opacity: 1; }
 .tth.a .tth__list li { opacity: 1; }
 
-.special { height: 1240px; background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; background: none; }
+.special { height: 1240px; background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; background: none; height: 100%; }
 .special .section__superin { background: #fafafa url(../img/bg4.jpg) no-repeat 50% 50%; background-size: cover; }
 
 .special__head { position: absolute; top: 94px; left: 49px; background: url('../img/icons-sc6aebcf814.png') 0 -2158px no-repeat; width: 258px; height: 139px; font-size: 30px; color: #f6f6f6; white-space: nowrap; line-height: 1.35; z-index: 21; }
+@media only screen and (max-height: 920px) { .special__head { top: 0; } }
 .special__head .special__headwrap { padding: 36px 0 0 40px; }
 .special__head span { display: block; font-size: 30px; color: #d6fcab; text-transform: uppercase; }
 
 .special__table { position: absolute; right: 0; top: 205px; width: 838px; z-index: 20; opacity: 0; -webkit-transition: all 1s linear; -webkit-transition-delay: 0.5s; -moz-transition: all 1s linear 0.5s; -o-transition: all 1s linear 0.5s; transition: all 1s linear 0.5s; }
+@media only screen and (max-height: 920px) { .special__table { top: 80px; } }
 .special__table table thead th { text-align: left; font-weight: normal; font-size: 18px; color: #f6f6f6; text-transform: uppercase; }
 .special__table table thead th div { padding: 22px; border: 4px solid rgba(255, 255, 255, 0.3); }
+@media only screen and (max-height: 920px) { .special__table table thead th div { padding: 16px; } }
 .special__table table thead th span { display: block; color: #d6fcac; }
 .special__table table thead th.is-selected div { border-color: white; background: #5e9a3a; }
 .special__table table thead th.firsth { padding-right: 10px; }
-.special__table table tbody th { padding: 23px; text-align: left; font-weight: normal; font-size: 16px; text-transform: uppercase; padding-right: 0; color: #f6f6f6; }
+.special__table table tbody th { padding: 23px; text-align: left; font-weight: normal; font-size: 16px; text-transform: uppercase; padding-right: 0; color: #f6f6f6; font-size: 12px; width: 260px; vertical-align: middle; }
+@media only screen and (max-height: 920px) { .special__table table tbody th { padding: 16px; } }
 .special__table table tbody th.is-selected { background: #5f9b3b; }
 .special__table table tbody th p { font-size: 14px; color: #d6fcac; line-height: 1.3; margin-top: 15px; text-transform: none; }
-.special__table table tbody td { width: 250; padding: 26px; }
+.special__table table tbody td { width: 250px; padding: 26px; }
 .special__table table tbody td.is-selected { background: #5f9b3b; }
 .special__table table tbody .is-lite td, .special__table table tbody .is-lite th { background: #e6f2d8; color: #353535; }
 .special__table table tbody .is-lite td.is-selected, .special__table table tbody .is-lite th.is-selected { background: #e1edda; }
 .special__table table tbody .kamer { vertical-align: middle; font-size: 18px; color: white; padding-right: 0; }
 .special__table table tbody .kamer em { font-style: normal; color: #d6fcac; }
 .special__table table tbody .har { font-size: 14px; color: #f6f6f6; }
+@media only screen and (max-height: 920px) { .special__table table tbody .har { font-size: 10px; } }
 .special__table table tbody .width { color: #353535; font-size: 14px; }
 .special__table table tbody .width h3 { font-weight: normal; font-size: 14px; color: #81847f; margin-bottom: 23px; }
+@media only screen and (max-height: 920px) { .special__table table tbody .width h3 { font-size: 10px; margin-bottom: 0; } }
 .special__table table tbody .width h3 strong { font-weight: normal; display: block; font-size: 30px; color: #509a3d; }
+@media only screen and (max-height: 920px) { .special__table table tbody .width h3 strong { font-size: 23px; } }
+@media only screen and (max-height: 920px) { .special__table table tbody .width p { display: none; } }
 .special__table table tbody .koeff { font-size: 18px; color: #353535; vertical-align: middle; }
 .special__table table tbody .koeff span { color: #509a3d; }
 .special__table table tbody .shir { font-size: 14px; color: #d6fcac; }
+@media only screen and (max-height: 920px) { .special__table table tbody .shir { font-size: 11px; } }
 .special__table table tbody .shir strong { display: block; font-size: 30px; color: white; }
+@media only screen and (max-height: 920px) { .special__table table tbody .shir strong { font-size: 23px; } }
 .special__table table tbody .order { background: transparent !important; padding: 0; padding-top: 17px; padding-right: 10px; }
 .special__table table tbody .order + .order { padding-right: 0; }
 .special__table table tbody .order a { font-family: bebold, sans-serif; font-size: 16px; text-transform: uppercase; color: white; display: block; border: 3px solid rgba(255, 255, 255, 0.4); text-align: center; height: 45px; line-height: 45px; text-decoration: none; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
