@@ -74,6 +74,9 @@ $w320: 320px
 =h()
 	@media only screen and (max-height: 920px)
 		@content
+=w
+	@media only screen and (min-width: 1850px)
+		@content
 =fs($sizeValue: 16)
 	font-size: $sizeValue + px
 	font-size: $sizeValue / 10 + rem

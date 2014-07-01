@@ -118,12 +118,16 @@ body
 		position: absolute
 		margin-left: -960px 
 		//margin-left: -1100px 
+		+w
+			width: 100%
+			left: 0
+			margin-left: 0   
 		
 	.home__green,.home__blue
 		position: absolute
 		z-index: 6
 		height: 750px 
-		background:  url(../img/green.png) no-repeat 50% 50% 
+		//background:  url(../img/green.png) no-repeat 50% 50% 
 		//background-size: cover
 		width: 100% 
 		top: 0
@@ -134,13 +138,36 @@ body
 		opacity: 0
 		+transition(opacity 1s linear .7s)
 		//+transition-delay(.8s)
+	.home__greenleft,.home__blueleft
+		position: absolute
+		left: 0
+		height: 100%
+		top: 0
+		width: 50%    
+		background:  url(../img/green_left.png) no-repeat 0 50% 
+		+w
+			left: -100px 
+	.home__blueleft
+		background:  url(../img/blue_left.png) no-repeat 0 50% 
+	.home__blueright,.home__greenright
+		position: absolute
+		right: 0
+		height: 100%
+		top: 0
+		width: 50%    
+		
+		background:  url(../img/blue_right.png) no-repeat 100% 50% 
+		+w
+			right: -100px 
+	.home__greenright
+		background:  url(../img/green_right.png) no-repeat 100% 50% 
 	&.a
 		.home__green,.home__blue
 			opacity: 1 
 	.home__blue
 		z-index: 3
 		//3top: 325px 
-		background:  url(../img/blue.png) no-repeat 50% 50% 
+		//background:  url(../img/blue.png) no-repeat 50% 50% 
 		+transition(opacity 1s linear .3s)
 		//background-size: cover
 	.home__window

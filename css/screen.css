@@ -97,9 +97,16 @@ body { position: relative; overflow: hidden; }
 .home .section__superin { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/bg1.jpg) no-repeat 50% 50%; background-size: cover; }
 .home .in { position: relative; z-index: 200; }
 .home .home__wraplines { height: 550px; top: 50%; margin-top: -290px; width: 1920px; left: 50%; position: absolute; margin-left: -960px; }
-.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 750px; background: url(../img/green.png) no-repeat 50% 50%; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
+@media only screen and (min-width: 1850px) { .home .home__wraplines { width: 100%; left: 0; margin-left: 0; } }
+.home .home__green, .home .home__blue { position: absolute; z-index: 6; height: 750px; width: 100%; top: 0; left: 0px; opacity: 0; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.7s; -moz-transition: opacity 1s linear 0.7s; -o-transition: opacity 1s linear 0.7s; transition: opacity 1s linear 0.7s; }
+.home .home__greenleft, .home .home__blueleft { position: absolute; left: 0; height: 100%; top: 0; width: 50%; background: url(../img/green_left.png) no-repeat 0 50%; }
+@media only screen and (min-width: 1850px) { .home .home__greenleft, .home .home__blueleft { left: -100px; } }
+.home .home__blueleft { background: url(../img/blue_left.png) no-repeat 0 50%; }
+.home .home__blueright, .home .home__greenright { position: absolute; right: 0; height: 100%; top: 0; width: 50%; background: url(../img/blue_right.png) no-repeat 100% 50%; }
+@media only screen and (min-width: 1850px) { .home .home__blueright, .home .home__greenright { right: -100px; } }
+.home .home__greenright { background: url(../img/green_right.png) no-repeat 100% 50%; }
 .home.a .home__green, .home.a .home__blue { opacity: 1; }
-.home .home__blue { z-index: 3; background: url(../img/blue.png) no-repeat 50% 50%; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.3s; -moz-transition: opacity 1s linear 0.3s; -o-transition: opacity 1s linear 0.3s; transition: opacity 1s linear 0.3s; }
+.home .home__blue { z-index: 3; -webkit-transition: opacity 1s linear; -webkit-transition-delay: 0.3s; -moz-transition: opacity 1s linear 0.3s; -o-transition: opacity 1s linear 0.3s; transition: opacity 1s linear 0.3s; }
 .home .home__window { position: absolute; left: 50%; margin-left: -303px; top: 194px; top: 50%; margin-top: -300px; z-index: 220; }
 @media only screen and (max-height: 920px) { .home .home__window { -moz-transform: scale(0.7); -o-transform: scale(0.7); -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); } }
 .home .home__window img { position: relative; z-index: 222; }
