@@ -3,6 +3,7 @@
 	background:  url(../img/bg5.jpg) no-repeat 50% 50%
 	background-size: cover
 	background: none
+	height: 100% 
 	+reg
 	.section__superin
 		background:  url(../img/bg5.jpg) no-repeat 50% 50%
@@ -17,6 +18,8 @@
 		right: 0
 		height: 148px
 		width: 295px
+		+h
+			top: 0 
 		.design__headwrap
 			position: relative
 			padding: 45px 40px 0 0
@@ -46,6 +49,8 @@
 		left: 0
 		font-size: 0
 		overflow: hidden  
+		+h
+			top: 5px 
 		.tab__item
 			position: relative 
 			display: inline-block
@@ -92,6 +97,8 @@
 		//display: none
 		opacity: 0
 		+transition(all .3s linear)
+		+h
+			top: 117px 
 		&.is-shown
 			//display: block !important
 			opacity: 1 
@@ -139,6 +146,9 @@
 				+box
 				opacity: 0 
 				+transition(all 0.3s linear 1.6s) 
+				+h
+					top: 300px 
+					bottom: auto 
 			.design__icon
 				display: inline-block
 				+s(design-circle-ico)
