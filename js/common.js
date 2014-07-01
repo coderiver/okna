@@ -106,9 +106,29 @@ head.ready(function() {
         var x = -(e.pageX) / 20;
         var y = -(e.pageY) / 5;
         //y = 0;
-        $('.home__blue').css({'margin-left': x + 'px'});
-        $('.home__green').css({'margin-left': x/2 + 'px'});
+        if($('body').hasClass('is-window')){}else{
+            $('.home__blue').css({'margin-left': x + 'px'});
+            $('.home__green').css({'margin-left': x/2 + 'px'});
+        }
+        //$('.tth__left,.tth__right').css({'margin-left': x/2 + 'px'});
+    });
+    $('.home__window').hover(function() {
+        $('body').addClass('is-window');
+    }, function() {
+        $('body').removeClass('is-window');
+    });
+    $('.home__window').mousemove(function(e){
+        var x = -(e.pageX) / 20;
+        var y = -(e.pageY) / 5;
+       
         $('.parallaxpic').css({'margin-top':y/4 + 'px'});
+    });
+    $('.section3').mousemove(function(e){
+        var x = -(e.pageX) / 20;
+        var y = -(e.pageY) / 5;
+       
+        $('.tth__left').css({'margin-left': x/4 + 'px'});
+        $('.tth__right').css({'margin-right': -x/4 + 'px'});
     });
     
 
