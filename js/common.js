@@ -33,6 +33,14 @@ head.ready(function() {
                         $(".js-tab1").addClass('is-shown');
                         }
                 }
+                else{
+                    $('.is-shown').removeClass('is-shown');
+                    $('.tab__item').removeClass('is-active');
+                    $('.tab__item:first-child').addClass('is-active');
+                }
+                if(n!=6){
+                    $('.furn').removeClass("notransitions");
+                }
               });
             // $('.section.is-active').removeClass('is-active').addClass('was-active');
             // $(".section"+n).addClass('is-active');
@@ -127,8 +135,8 @@ head.ready(function() {
         var x = -(e.pageX) / 20;
         var y = -(e.pageY) / 5;
        
-        $('.tth__left').css({'margin-left': x/4 + 'px'});
-        $('.tth__right').css({'margin-right': -x/4 + 'px'});
+        $('.tth__bg').css({'margin-left': x/4 + 'px'});
+        //$('.tth__right').css({'margin-right': -x/4 + 'px'});
     });
     
 
