@@ -51,7 +51,7 @@ body { position: relative; overflow: hidden; }
 
 #myloader { background: url(../img/bg1.jpg) no-repeat 0 0; background-size: cover; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 1500; }
 #myloader .myloader__in { position: absolute; width: 300px; height: 30px; top: 50%; margin-top: -15px; left: 50%; margin-left: -150px; }
-#myloader .myloader__progress { height: 2px; background: green; border-radius: 10px; }
+#myloader .myloader__progress { height: 2px; background: green; border-radius: 10px; width: 0; }
 
 .in { width: 960px; margin: 0 auto; position: relative; }
 
