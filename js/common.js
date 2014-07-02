@@ -135,7 +135,7 @@ head.ready(function() {
         var x = -(e.pageX) / 20;
         var y = -(e.pageY) / 5;
        
-        $('.tth__bg').css({'margin-left': x/4 + 'px'});
+        $('.tth__bg').css({'left': x/4 + 'px'});
         //$('.tth__right').css({'margin-right': -x/4 + 'px'});
     });
     
