@@ -52,7 +52,7 @@
 		+h
 			bottom: auto
 			top: 664px 
-		+transition(all .5s linear .3s) 
+		+transition(all .5s linear .6s) 
 		img
 			display: block
 	.furn__title
@@ -145,6 +145,13 @@
 	.furn__pic,.furn__slide,.furn__title,.furn__sw
 		+transition(all .4s linear 1.5s) 
 		opacity: 0 
+		
+	.furn__title
+		+transition(all .4s linear 2s)
+	.furn__slide,.furn__sw
+		+transition(all .4s linear 2.5s)
+	.furn__pic
+		+transition(all .4s linear 3s)
 	&.notransitions
 		.furn__pic,.furn__slide
 			+transition(none) 

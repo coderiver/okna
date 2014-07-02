@@ -176,12 +176,14 @@
 				top: 0
 				width: 910px  
 				height: 666px  
-				+transition(all 0.7s linear 1.4s) 
+				//+transition(all 0.7s linear 1.4s) 
+				+transition(all 0.7s linear 0.6s) 
+				opacity: 0 
 			.design__text-top
 				left: 553px
 				&.design__text-top_1
 					top: 42px
-					+transition(all 0.2s linear 0.6s) 
+					+transition(all 0.2s linear 1s) 
 					div
 						+png(t1)
 						position: absolute
@@ -189,7 +191,7 @@
 						left: -210px  
 				&.design__text-top_2
 					top: 114px
-					+transition(all 0.2s linear .8s)
+					+transition(all 0.2s linear 1.5s)
 					div
 						+png(t2)
 						position: absolute
@@ -197,7 +199,7 @@
 						left: -286px  
 				&.design__text-top_3
 					top: 191px
-					+transition(all 0.2s linear 1s)
+					+transition(all 0.2s linear 2s)
 					div
 						+png(t3)
 						position: absolute
@@ -207,7 +209,7 @@
 				left: 99px
 				&.design__text-bottom_1
 					top: 471px
-					+transition(all 0.2s linear 1.2s)
+					+transition(all 0.2s linear 2.5s)
 					div
 						+png(t4)
 						position: absolute
@@ -215,7 +217,7 @@
 						left: 405px  
 				&.design__text-bottom_2
 					top: 545px
-					+transition(all 0.2s linear 1.4s)
+					+transition(all 0.2s linear 3s)
 					div
 						+png(t5)
 						position: absolute
@@ -240,12 +242,14 @@
 				top: 0
 				width: 422px  
 				height: 684px 
+				opacity: 0 
+				+transition(all 0.4s linear .5s)
 			.design__text-top, .design__text-bottom 
 				width: 362px
 				&.design__text-top_1
 					top: 80px
 					left: 555px
-					+transition(all 0.2s linear .4s)
+					+transition(all 0.2s linear 1s)
 					div
 						+png(t6)
 						position: absolute
@@ -254,7 +258,7 @@
 				&.design__text-top_2
 					top: 195px
 					left: 584px
-					+transition(all 0.2s linear .6s)
+					+transition(all 0.2s linear 1.5s)
 					div
 						+png(t7)
 						position: absolute
@@ -263,7 +267,7 @@
 				&.design__text-top_3
 					top: 332px
 					left: 542px
-					+transition(all 0.2s linear .8s)
+					+transition(all 0.2s linear 2s)
 					div
 						+png(t8)
 						position: absolute
@@ -275,7 +279,7 @@
 				left: 560px
 				bottom: 0
 				width: 355px
-				+transition(all 0.2s linear 1.2s)
+				+transition(all 0.2s linear 2.5s)
 				h3
 					padding: 18px 0
 					font-size: 17px
@@ -283,11 +287,11 @@
 				.design__pic
 					display: inline-block
 					+s(tab3-pic)
-			.design__block,.design__text-top, .design__text-bottom 
+			.design__block,.design__text-top, .design__text-bottom ,.tab3pic,.tab2pic,.tab1pic
 				opacity: 0 
 			&.is-shown
 				opacity: 1
-				.tab3pic
+				.tab3pic,.tab2pic,.tab1pic
 					opacity: 1
 				.design__block,.design__text-top, .design__text-bottom 
 					opacity: 1 
@@ -296,10 +300,9 @@
 	position: absolute
 	top: 0
 	right: 0
-	+h
-		top: auto 
-		right: -100px 
-		bottom: 0 
+	top: auto 
+	right: -100px 
+	bottom: 0 
 //site-in
 .site-in
 	padding: 0px 19px 0px 91px

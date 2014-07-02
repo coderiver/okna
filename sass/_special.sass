@@ -35,7 +35,7 @@
 	width: 838px
 	z-index: 20  
 	opacity: 0
-	+transition(all 1s linear .5s) 
+	+transition(all .6s linear 1s) 
 	+h
 		top: 80px 
 	table
@@ -152,6 +152,10 @@
 				padding: 0 
 				padding-top: 17px 
 				padding-right: 10px 
+				opacity: 0
+				+transition(all .5s linear 1.8s)  
+				.a &
+					opacity: 1 
 				&+.order
 					padding-right: 0 
 				a
@@ -166,6 +170,7 @@
 					line-height: 45px 
 					text-decoration: none
 					+transition(all .2s linear)
+					
 					i
 						display: inline-block
 						margin-left: 19px 
