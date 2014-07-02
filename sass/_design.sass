@@ -297,12 +297,7 @@
 					opacity: 1 
 
 .site-in
-	position: absolute
-	top: 0
-	right: 0
-	top: auto 
-	right: -100px 
-	bottom: 0 
+	
 //site-in
 .site-in
 	padding: 0px 19px 0px 91px
@@ -314,12 +309,23 @@
 	background: #3a3a3b
 	display: inline-block
 	z-index: 990 
+	position: absolute
+	top: 0
+	right: 0
+	top: auto 
+	right: -100px 
+	bottom: 0 
 	.site-in__pic
 		position: absolute
 		left: 17px
 		top: 50%
 		margin-top: -18px
 		+s(site-in-pic)
+.section4 .site-in
+	bottom: auto 
+	top: 0
+	right: 0  
+	
 +keyframes(bubles)
 	0%
 		top: 275px 

@@ -190,14 +190,14 @@ body { position: relative; overflow: hidden; }
 .tth .tth__info p { font-size: 14px; color: #3a3a3a; }
 .tth .tth__list { top: 182px; left: 480px; position: absolute; width: 370px; list-style: none; opacity: 0; -webkit-transition: all 0.5s linear; -webkit-transition-delay: 1.8s; -moz-transition: all 0.5s linear 1.8s; -o-transition: all 0.5s linear 1.8s; transition: all 0.5s linear 1.8s; }
 @media only screen and (max-height: 920px) { .tth .tth__list { top: 0; } }
-.tth .tth__list li { margin-bottom: 45px; opacity: 0; -webkit-transition: all 0.3s linear; -webkit-transition-delay: 2s; -moz-transition: all 0.3s linear 2s; -o-transition: all 0.3s linear 2s; transition: all 0.3s linear 2s; }
-.tth .tth__list li + li { -webkit-transition-delay: 2.7s; -moz-transition-delay: 2.7s; -o-transition-delay: 2.7s; transition-delay: 2.7s; }
-.tth .tth__list li + li + li { -webkit-transition-delay: 3.4s; -moz-transition-delay: 3.4s; -o-transition-delay: 3.4s; transition-delay: 3.4s; }
-.tth .tth__list li + li + li + li { -webkit-transition-delay: 4.1s; -moz-transition-delay: 4.1s; -o-transition-delay: 4.1s; transition-delay: 4.1s; }
-.tth .tth__list li + li + li + li + li { -webkit-transition-delay: 4.8s; -moz-transition-delay: 4.8s; -o-transition-delay: 4.8s; transition-delay: 4.8s; }
-.tth .tth__list li + li + li + li + li + li { -webkit-transition-delay: 5.5s; -moz-transition-delay: 5.5s; -o-transition-delay: 5.5s; transition-delay: 5.5s; }
-.tth .tth__list li + li + li + li + li + li + li { -webkit-transition-delay: 6.2s; -moz-transition-delay: 6.2s; -o-transition-delay: 6.2s; transition-delay: 6.2s; }
-.tth .tth__list li + li + li + li + li + li + li + li { -webkit-transition-delay: 6.9s; -moz-transition-delay: 6.9s; -o-transition-delay: 6.9s; transition-delay: 6.9s; }
+.tth .tth__list li { margin-bottom: 45px; opacity: 0; -webkit-transition: all 0.2s linear; -webkit-transition-delay: 2s; -moz-transition: all 0.2s linear 2s; -o-transition: all 0.2s linear 2s; transition: all 0.2s linear 2s; }
+.tth .tth__list li + li { -webkit-transition-delay: 2.5s; -moz-transition-delay: 2.5s; -o-transition-delay: 2.5s; transition-delay: 2.5s; }
+.tth .tth__list li + li + li { -webkit-transition-delay: 3s; -moz-transition-delay: 3s; -o-transition-delay: 3s; transition-delay: 3s; }
+.tth .tth__list li + li + li + li { -webkit-transition-delay: 3.5s; -moz-transition-delay: 3.5s; -o-transition-delay: 3.5s; transition-delay: 3.5s; }
+.tth .tth__list li + li + li + li + li { -webkit-transition-delay: 4s; -moz-transition-delay: 4s; -o-transition-delay: 4s; transition-delay: 4s; }
+.tth .tth__list li + li + li + li + li + li { -webkit-transition-delay: 4.5s; -moz-transition-delay: 4.5s; -o-transition-delay: 4.5s; transition-delay: 4.5s; }
+.tth .tth__list li + li + li + li + li + li + li { -webkit-transition-delay: 5s; -moz-transition-delay: 5s; -o-transition-delay: 5s; transition-delay: 5s; }
+.tth .tth__list li + li + li + li + li + li + li + li { -webkit-transition-delay: 5.5s; -moz-transition-delay: 5.5s; -o-transition-delay: 5.5s; transition-delay: 5.5s; }
 .tth .tth__list .tth__icon { width: 80px; text-align: center; vertical-align: middle; display: inline-block; }
 .tth .tth__list .tth__icon i { display: inline-block; }
 .tth .tth__list .tth__i1 i { background: url('../img/icons-sa372b1a2ea.png') 0 -2102px no-repeat; width: 41px; height: 45px; }
@@ -344,10 +344,10 @@ body { position: relative; overflow: hidden; }
 .design .tab-cont.tab-cont_3.is-shown .tab3pic, .design .tab-cont.tab-cont_3.is-shown .tab2pic, .design .tab-cont.tab-cont_3.is-shown .tab1pic { opacity: 1; }
 .design .tab-cont.tab-cont_3.is-shown .design__block, .design .tab-cont.tab-cont_3.is-shown .design__text-top, .design .tab-cont.tab-cont_3.is-shown .design__text-bottom { opacity: 1; }
 
-.site-in { position: absolute; top: 0; right: 0; top: auto; right: -100px; bottom: 0; }
-
-.site-in { padding: 0px 19px 0px 91px; height: 56px; line-height: 56px; color: #b3d60d; font-size: 15px; text-decoration: none; background: #3a3a3b; display: inline-block; z-index: 990; }
+.site-in { padding: 0px 19px 0px 91px; height: 56px; line-height: 56px; color: #b3d60d; font-size: 15px; text-decoration: none; background: #3a3a3b; display: inline-block; z-index: 990; position: absolute; top: 0; right: 0; top: auto; right: -100px; bottom: 0; }
 .site-in .site-in__pic { position: absolute; left: 17px; top: 50%; margin-top: -18px; background: url('../img/icons-sa372b1a2ea.png') 0 -1520px no-repeat; width: 56px; height: 36px; }
+
+.section4 .site-in { bottom: auto; top: 0; right: 0; }
 
 @-moz-keyframes bubles { 0% { top: 275px; }
   100% { top: -275px; } }
