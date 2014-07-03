@@ -386,8 +386,8 @@
 			<div class="tab-cont tab-cont_3 js-tab-cont js-tab3">
 			<div class="tab3pic"></div>
 			<div class="bubles"><div></div><div class="div1"></div></div>
-			<canvas id="projector" width="38" height="270" >Your browser does not support the Canvas element.</canvas>
-			<canvas id="projector1" width="38" height="270" >Your browser does not support the Canvas element.</canvas>
+			<div class="projector"><canvas id="projector" width="38" height="300" >Your browser does not support the Canvas element.</canvas></div>
+			<div class="projector1"><canvas id="projector1" width="38" height="300" >Your browser does not support the Canvas element.</canvas></div>
 			   <div class="design__text-top design__text-top_1">Аргон улучшает теплоизоляцию<div></div></div>
 			    <div class="design__text-top design__text-top_2">Низкоэмиссионное нанопокрытие <strong>(«I-стекло»)</strong> бережет тепло внутри дома <div></div></div>
 			    <div class="design__text-top design__text-top_3">Комбинированная гибридная теплая рамка уменьшает образование конденсата и наледи<div></div></div>
@@ -650,9 +650,9 @@
 
 <script type="text/javascript">
 			var ww = 38;
-			var hh = 270;
+			var hh = 300;
 
-			var VELOCITY = .2;
+			var VELOCITY = .1;
 			var PARTICLES = 20;
 			
 			var mouse = {x:0, y:0};
@@ -682,6 +682,7 @@
 			
 			function Initialize() {
 				setInterval( TimeUpdate, 10 );
+				//setInterval( TimeUpdate1, 10 );
 			}
 			
 			function TimeUpdate(e) {
@@ -734,12 +735,13 @@
 
 					context1.fillStyle = particle.color;
 					context1.beginPath();
-					context.arc(particle.x,particle.y,particle.currentSize,0,Math.PI*2,true);
+					context1.arc(particle.x,particle.y,particle.currentSize,0,Math.PI*2,true);
 					context1.closePath();
 					context1.fill();
 					
 				}
 			}
+
 			function DistanceBetween(p1,p2) {
 				var dx = p2.x-p1.x;
 				var dy = p2.y-p1.y;

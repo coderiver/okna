@@ -365,9 +365,11 @@ body { position: relative; overflow: hidden; }
 @keyframes bubles { 0% { top: 275px; }
   100% { top: -275px; } }
 
-#projector, #projector1 { width: 38px; height: 270px; position: absolute; left: 339px; top: 38px; }
+.projector, .projector1 { width: 38px; height: 270px; position: absolute; left: 339px; top: 38px; overflow: hidden; }
 
-#projector { left: 387px; }
+canvas { position: absolute; top: -30px; }
+
+.projector { left: 387px; overflow: hidden; }
 
 .bubles { width: 91px; height: 275px; overflow: hidden; position: absolute; left: 339px; top: 38px; display: none; }
 .bubles div { width: 91px; height: 275px; position: absolute; top: 0; left: 0; background: url(../img/bubles.png) no-repeat 0 0; }
