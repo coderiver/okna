@@ -387,6 +387,7 @@
 			<div class="tab3pic"></div>
 			<div class="bubles"><div></div><div class="div1"></div></div>
 			<canvas id="projector" width="38" height="270" >Your browser does not support the Canvas element.</canvas>
+			<canvas id="projector1" width="38" height="270" >Your browser does not support the Canvas element.</canvas>
 			   <div class="design__text-top design__text-top_1">Аргон улучшает теплоизоляцию<div></div></div>
 			    <div class="design__text-top design__text-top_2">Низкоэмиссионное нанопокрытие <strong>(«I-стекло»)</strong> бережет тепло внутри дома <div></div></div>
 			    <div class="design__text-top design__text-top_3">Комбинированная гибридная теплая рамка уменьшает образование конденсата и наледи<div></div></div>
@@ -658,10 +659,12 @@
 			var particles = [];
 			var colors = [ "#0B9ED1","#0B9ED1","#0B9ED1" ];
 			var canvas = document.getElementById('projector');
+			var canvas1 = document.getElementById('projector1');
 			var context;
 			
 			if (canvas && canvas.getContext) {
 				context = canvas.getContext('2d');
+				context1 = canvas1.getContext('2d');
 				
 				for( var i = 0; i < PARTICLES; i++ ) {
 					particles.push( { 
@@ -684,6 +687,7 @@
 			function TimeUpdate(e) {
 				
 				context.clearRect(0, 0, ww, hh);
+				context1.clearRect(0, 0, ww, hh);
 				
 				var len = particles.length;
 				var particle;
@@ -727,6 +731,12 @@
 					context.arc(particle.x,particle.y,particle.currentSize,0,Math.PI*2,true);
 					context.closePath();
 					context.fill();
+
+					context1.fillStyle = particle.color;
+					context1.beginPath();
+					context.arc(particle.x,particle.y,particle.currentSize,0,Math.PI*2,true);
+					context1.closePath();
+					context1.fill();
 					
 				}
 			}
