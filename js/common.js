@@ -213,13 +213,13 @@ head.ready(function() {
     $('.popup__close,.overlay').click(function(event) {
         $('.overlay,.popup').fadeOut();
     });
-    $('.help').click(function(event) {
-        if($(this).hasClass('is-open')){}
+    $('.help__icon').click(function(event) {
+        if($(this).parent().hasClass('is-open')){}
         else{
             $('.help').removeClass('is-open');
             $('.help__popup').fadeOut();
 
-            $(this).addClass('is-open').children('.help__popup').fadeIn();
+            $(this).parent().addClass('is-open').children('.help__popup').fadeIn();
         }
         return false;
     });
