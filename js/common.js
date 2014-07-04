@@ -147,12 +147,17 @@ head.ready(function() {
    //2 video
    $('.js-video').click(function(event) {
        $(".overlay").fadeIn(1000,function(){
-            $('.videopopup').fadeIn();
+            $('.videopopup').fadeIn(function(){
+                //alert('yes');
+                $('.videopopup__content').html($('#video').html());
+            });
        })
        return false;
    });
    $('.overlay,.videopopup__close').click(function(event) {
-       $('.overlay,.videopopup').fadeOut();
+       $('.overlay,.videopopup').fadeOut(function(){
+        $('.videopopup__content').html('');
+       });
    });
 
 
